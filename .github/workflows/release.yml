@@ -37,6 +37,13 @@ jobs:
       - name: Plugin tests (no Blender, no network)
         run: node tests/plugin/unit.mjs
 
+      - name: Libraries Blender needs to render headless (EGL, Mesa, X11 bits)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends \
+            libegl1 libegl-mesa0 libgl1 libgl1-mesa-dri libglx-mesa0 libgbm1 \
+            libxi6 libxxf86vm1 libxfixes3 libxrender1 libxkbcommon0 libsm6 libice6 libx11-6 libxext6
+
       - name: Get Blender ${{ env.BLENDER_VERSION }} (checked against blender.org's SHA-256 list)
         run: |
           set -euo pipefail
