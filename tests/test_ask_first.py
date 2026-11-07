@@ -4,6 +4,8 @@
 # `confirmed: true`, and the refusal is that same question; run_python filling an empty scene with new meshes gets a
 # short reminder that models come from the person (import). No generation, no quality / views / versions lines.
 
+import os
+
 import bpy
 
 from nighty_blender.nighty import presets
@@ -94,7 +96,7 @@ def test_make_game_ready_refuses_without_confirmation_and_the_refusal_is_the_que
     except ToolError as err:
         assert "job runner" in str(err), str(err)
     for args, part in (({}, "Give the model"),
-                       ({"file": "C:/nope/model.glb"}, "There is no file"),
+                       ({"file": os.path.join(os.path.abspath(os.sep), "nope", "model.glb")}, "There is no file"),
                        ({"file": "relative.glb"}, "full path"),
                        ({"object": "Nope"}, "No mesh object"),
                        ({"object": "Cube", "file": "C:/x.glb"}, "only one"),

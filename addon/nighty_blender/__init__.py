@@ -43,7 +43,19 @@ def _log(*parts):
     print("Nighty Blender:", *(str(p) for p in parts))
 
 
+def _ignore_sigpipe():
+    """Blender's embedded Python leaves SIGPIPE at its default on Linux and macOS: a client that hangs up while we
+    send would kill Blender. Ignored, a broken connection is just an error on that socket."""
+    import signal
+    if hasattr(signal, "SIGPIPE"):
+        try:
+            signal.signal(signal.SIGPIPE, signal.SIG_IGN)
+        except (ValueError, OSError):   # not the main thread: leave it as it is
+            pass
+
+
 def register():
+    _ignore_sigpipe()
     load_tools()
     panel.register()
     session = Session(log=_log)

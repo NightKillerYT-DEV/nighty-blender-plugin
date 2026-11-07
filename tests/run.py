@@ -33,6 +33,9 @@ def fresh_scene():
 
 
 def main(filters):
+    import signal
+    if hasattr(signal, "SIGPIPE"):   # Linux/macOS: a test server writing to a closed socket must not kill Blender
+        signal.signal(signal.SIGPIPE, signal.SIG_IGN)
     for path in (HERE, ADDON_DIR):
         if path not in sys.path:
             sys.path.insert(0, path)
