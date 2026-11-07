@@ -3,7 +3,7 @@
   "id": "nighty-blender",
   "name": "Nighty Blender",
   "author": "NightyCode",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Your Blender, for the AI in Nighty Vault: import a model, make it game-ready (exact triangle count, UVs, textures, checks, export for Roblox and other engines). No AI model inside: models come from you.",
   "minAppVersion": "0.3.3",
   "entry": "main.js",

@@ -713,6 +713,9 @@ async function isBlenderOpen() {
 // ---------------------------------------------------------------- downloads (hash-checked)
 
 async function download(url, dest, size) {
+  // Its folder first: curl and files.write don't make missing folders (curl's "error 23" on a fresh install).
+  const parent = dest.replace(/\\/g, "/").replace(/\/[^/]*$/, "");
+  if (parent) await nighty.files.mkdir(parent);
   // The browser's fetch first (full access keeps it); curl when the server doesn't allow it.
   try {
     const res = await fetch(url, { redirect: "follow" });
@@ -1119,7 +1122,7 @@ function linkLine() {
     case "off":
       return [{ type: "stat", label: "Blender", value: "Not connected" }];
     default:
-      return [{ type: "stat", label: "Blender", value: "Not found" },
+      return [{ type: "stat", label: "Blender", value: "Not connected yet" },
         { type: "text", text: "Open Blender with the add-on: N panel → Nighty tab → Connect to Nighty Vault.", muted: true }];
   }
 }

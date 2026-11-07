@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1
+
+- Plugin: the add-on download makes its folder first (a fresh install stopped with curl error 23).
+- Plugin: the card says "Not connected yet" instead of "Not found" before Blender is paired.
+
 ## 2.0.0
 
 Nighty Blender becomes a Nighty Vault plugin, and goes **import first**.
