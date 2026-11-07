@@ -1,0 +1,197 @@
+{
+ "name": "scifi_crate",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 5468,
+ "budget": 6000,
+ "build_seconds": 0.6,
+ "objects": {
+  "Body": {
+   "faces": 150,
+   "triangles_total": 300,
+   "quads": 150,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CornerGuards": {
+   "faces": 600,
+   "triangles_total": 1200,
+   "quads": 600,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "SidePlate": {
+   "faces": 80,
+   "triangles_total": 204,
+   "quads": 77,
+   "tris": 0,
+   "ngons": 3,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GrilleBars": {
+   "faces": 216,
+   "triangles_total": 432,
+   "quads": 216,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "GrilleLight": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SidePlate.001": {
+   "faces": 80,
+   "triangles_total": 204,
+   "quads": 77,
+   "tris": 0,
+   "ngons": 3,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GrilleBars.001": {
+   "faces": 216,
+   "triangles_total": 432,
+   "quads": 216,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "GrilleLight.001": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "EndPlate": {
+   "faces": 108,
+   "triangles_total": 304,
+   "quads": 101,
+   "tris": 0,
+   "ngons": 7,
+   "shells": 1,
+   "symmetry": 0.312
+  },
+  "Handle": {
+   "faces": 158,
+   "triangles_total": 332,
+   "quads": 156,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.143
+  },
+  "EndPlate.001": {
+   "faces": 108,
+   "triangles_total": 304,
+   "quads": 101,
+   "tris": 0,
+   "ngons": 7,
+   "shells": 1,
+   "symmetry": 0.312
+  },
+  "Handle.001": {
+   "faces": 158,
+   "triangles_total": 332,
+   "quads": 156,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.143
+  },
+  "GlowSeam": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Lid": {
+   "faces": 170,
+   "triangles_total": 340,
+   "quads": 170,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "TopPlate": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "EmblemRing": {
+   "faces": 128,
+   "triangles_total": 256,
+   "quads": 128,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "EmblemGlow": {
+   "faces": 30,
+   "triangles_total": 108,
+   "quads": 28,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Chevron": {
+   "faces": 38,
+   "triangles_total": 72,
+   "quads": 26,
+   "tris": 10,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "Chevron.001": {
+   "faces": 38,
+   "triangles_total": 72,
+   "quads": 26,
+   "tris": 10,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "Latches": {
+   "faces": 216,
+   "triangles_total": 432,
+   "quads": 216,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.914,
+  0.622,
+  0.518
+ ],
+ "blender": "5.2.3"
+}

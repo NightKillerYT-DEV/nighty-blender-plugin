@@ -1,0 +1,62 @@
+{
+ "name": "barrel_wooden",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 7208,
+ "budget": 8000,
+ "build_seconds": 2.7,
+ "objects": {
+  "Body": {
+   "faces": 1411,
+   "triangles_total": 3944,
+   "quads": 1214,
+   "tris": 60,
+   "ngons": 137,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Hoops": {
+   "faces": 648,
+   "triangles_total": 1520,
+   "quads": 640,
+   "tris": 0,
+   "ngons": 8,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "Rivets": {
+   "faces": 260,
+   "triangles_total": 600,
+   "quads": 240,
+   "tris": 0,
+   "ngons": 20,
+   "shells": 20,
+   "symmetry": 0.047
+  },
+  "Bung": {
+   "faces": 102,
+   "triangles_total": 236,
+   "quads": 100,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Tap": {
+   "faces": 418,
+   "triangles_total": 908,
+   "quads": 410,
+   "tris": 0,
+   "ngons": 8,
+   "shells": 5,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.6,
+  0.654,
+  0.9
+ ],
+ "blender": "5.2.3"
+}

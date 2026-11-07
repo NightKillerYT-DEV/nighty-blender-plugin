@@ -1,0 +1,107 @@
+{
+ "name": "shield_round",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 5666,
+ "budget": 6500,
+ "build_seconds": 0.5,
+ "objects": {
+  "Planks": {
+   "faces": 582,
+   "triangles_total": 1280,
+   "quads": 570,
+   "tris": 0,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "Backing": {
+   "faces": 50,
+   "triangles_total": 188,
+   "quads": 48,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Straps": {
+   "faces": 52,
+   "triangles_total": 88,
+   "quads": 36,
+   "tris": 16,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "StrapRivets": {
+   "faces": 196,
+   "triangles_total": 440,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "Rim": {
+   "faces": 384,
+   "triangles_total": 768,
+   "quads": 384,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "RimRivets": {
+   "faces": 588,
+   "triangles_total": 1320,
+   "quads": 576,
+   "tris": 0,
+   "ngons": 12,
+   "shells": 12,
+   "symmetry": 1.0
+  },
+  "BossFlange": {
+   "faces": 290,
+   "triangles_total": 636,
+   "quads": 288,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Boss": {
+   "faces": 193,
+   "triangles_total": 414,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Battens": {
+   "faces": 52,
+   "triangles_total": 88,
+   "quads": 36,
+   "tris": 16,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "Grip": {
+   "faces": 210,
+   "triangles_total": 444,
+   "quads": 208,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.628,
+  0.16,
+  0.628
+ ],
+ "blender": "5.2.3"
+}

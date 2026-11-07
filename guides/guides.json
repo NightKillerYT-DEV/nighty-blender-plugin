@@ -1,0 +1,69 @@
+{
+ "guides": [
+  {
+   "topic": "workflow",
+   "uri": "nighty-blender://guide/workflow",
+   "title": "Workflow: import first, make it game-ready, check, fix",
+   "description": "How every model goes through Nighty Blender: the person's file in, one question, make_game_ready, then checks and small fixes. No local AI: read this first.",
+   "file": "guides/workflow.md",
+   "mimeType": "text/markdown"
+  },
+  {
+   "topic": "library",
+   "uri": "nighty-blender://guide/library",
+   "title": "The nighty library",
+   "description": "Every function of `import nighty as n` (inside run_python), with its arguments and an example.",
+   "file": "guides/library.md",
+   "mimeType": "text/markdown"
+  },
+  {
+   "topic": "topology",
+   "uri": "nighty-blender://guide/topology",
+   "title": "Topology and shape rules",
+   "description": "Meshes that shade well, export cleanly and hold up close: the rules behind the mesh check.",
+   "file": "guides/topology.md",
+   "mimeType": "text/markdown"
+  },
+  {
+   "topic": "hard-surface",
+   "uri": "nighty-blender://guide/hard-surface",
+   "title": "Hard-surface recipe: weapons, machines, vehicles",
+   "description": "Only when the person asks you to build in code: parts with the library and the detail kit, checked one by one, bevels and surfaces. Examples: rifle_ar_hero, blaster_hero, pistol_stylized.",
+   "file": "guides/hard-surface.md",
+   "mimeType": "text/markdown"
+  },
+  {
+   "topic": "props",
+   "uri": "nighty-blender://guide/props",
+   "title": "Props and furniture recipes",
+   "description": "Only when the person asks you to build in code: how the common props are built (each has a checked example to adapt: blender_guide examples with its name and a style).",
+   "file": "guides/props.md",
+   "mimeType": "text/markdown"
+  },
+  {
+   "topic": "organic",
+   "uri": "nighty-blender://guide/organic",
+   "title": "Organic shapes: import, or build stylized when asked",
+   "description": "Characters, creatures, plants and rocks: imported from the person's file; how to build stylized ones when the person asks for code.",
+   "file": "guides/organic.md",
+   "mimeType": "text/markdown"
+  },
+  {
+   "topic": "texturing",
+   "uri": "nighty-blender://guide/texturing",
+   "title": "Texturing: materials per part, wear, decals, bake, export",
+   "description": "How to make textures that are sharp, physically right and game-ready (the opposite of smeared, blurry textures).",
+   "file": "guides/texturing.md",
+   "mimeType": "text/markdown"
+  },
+  {
+   "topic": "blender-api",
+   "uri": "nighty-blender://guide/blender-api",
+   "title": "Blender 4.2 to 5.x: what changed in the Python API",
+   "description": "Most broken scripts are API drift. Use the nighty helpers (n.compat) or these replacements.",
+   "file": "guides/blender-api.md",
+   "mimeType": "text/markdown"
+  }
+ ],
+ "skill": "guides/ai-skill.md"
+}

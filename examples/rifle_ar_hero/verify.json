@@ -1,0 +1,503 @@
+{
+ "name": "rifle_ar_hero",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 17120,
+ "budget": 20000,
+ "build_seconds": 3.7,
+ "objects": {
+  "UpperReceiver": {
+   "faces": 238,
+   "triangles_total": 636,
+   "quads": 223,
+   "tris": 0,
+   "ngons": 15,
+   "shells": 1,
+   "symmetry": 0.425
+  },
+  "DustCover": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CoverLatch": {
+   "faces": 26,
+   "triangles_total": 44,
+   "quads": 18,
+   "tris": 8,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CoverHinge": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BrassDeflector": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "AssistHousing": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "AssistPlunger": {
+   "faces": 44,
+   "triangles_total": 100,
+   "quads": 38,
+   "tris": 4,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "TopRail": {
+   "faces": 678,
+   "triangles_total": 1356,
+   "quads": 570,
+   "tris": 104,
+   "ngons": 4,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "ChargingHandle": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "ChargingLatch": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LowerReceiver": {
+   "faces": 281,
+   "triangles_total": 730,
+   "quads": 268,
+   "tris": 2,
+   "ngons": 11,
+   "shells": 1,
+   "symmetry": 0.049
+  },
+  "MagwellFlare": {
+   "faces": 236,
+   "triangles_total": 544,
+   "quads": 232,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 1,
+   "symmetry": 0.941
+  },
+  "TriggerGuard": {
+   "faces": 50,
+   "triangles_total": 116,
+   "quads": 48,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "Trigger": {
+   "faces": 56,
+   "triangles_total": 128,
+   "quads": 48,
+   "tris": 6,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "Pins": {
+   "faces": 152,
+   "triangles_total": 368,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 8,
+   "shells": 4,
+   "symmetry": 0.25
+  },
+  "MagRelease": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "ReleaseFence": {
+   "faces": 144,
+   "triangles_total": 288,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BoltCatch": {
+   "faces": 26,
+   "triangles_total": 44,
+   "quads": 18,
+   "tris": 8,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "Selector": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SelectorHub": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "PistolGrip": {
+   "faces": 257,
+   "triangles_total": 700,
+   "quads": 244,
+   "tris": 0,
+   "ngons": 13,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "GripCap": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BufferTube": {
+   "faces": 18,
+   "triangles_total": 60,
+   "quads": 16,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CastleNut": {
+   "faces": 194,
+   "triangles_total": 460,
+   "quads": 150,
+   "tris": 24,
+   "ngons": 20,
+   "shells": 1,
+   "symmetry": 0.25
+  },
+  "EndPlate": {
+   "faces": 50,
+   "triangles_total": 124,
+   "quads": 48,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SlingLoop": {
+   "faces": 86,
+   "triangles_total": 188,
+   "quads": 84,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "StockHousing": {
+   "faces": 82,
+   "triangles_total": 188,
+   "quads": 80,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Stock": {
+   "faces": 201,
+   "triangles_total": 524,
+   "quads": 193,
+   "tris": 0,
+   "ngons": 8,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "StockRibs": {
+   "faces": 312,
+   "triangles_total": 528,
+   "quads": 216,
+   "tris": 96,
+   "ngons": 0,
+   "shells": 12,
+   "symmetry": 0.167
+  },
+  "StockLever": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LeverPin": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "ButtPad": {
+   "faces": 162,
+   "triangles_total": 500,
+   "quads": 150,
+   "tris": 0,
+   "ngons": 12,
+   "shells": 1,
+   "symmetry": 0.111
+  },
+  "Handguard": {
+   "faces": 416,
+   "triangles_total": 1448,
+   "quads": 380,
+   "tris": 0,
+   "ngons": 36,
+   "shells": 1,
+   "symmetry": 0.345
+  },
+  "HandguardRail": {
+   "faces": 1042,
+   "triangles_total": 2084,
+   "quads": 882,
+   "tris": 156,
+   "ngons": 4,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HandguardScrews": {
+   "faces": 156,
+   "triangles_total": 368,
+   "quads": 132,
+   "tris": 12,
+   "ngons": 12,
+   "shells": 2,
+   "symmetry": 0.979
+  },
+  "Barrel": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CrushWasher": {
+   "faces": 48,
+   "triangles_total": 96,
+   "quads": 48,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Compensator": {
+   "faces": 195,
+   "triangles_total": 648,
+   "quads": 148,
+   "tris": 16,
+   "ngons": 31,
+   "shells": 1,
+   "symmetry": 0.196
+  },
+  "OpticMount": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "MountScrews": {
+   "faces": 180,
+   "triangles_total": 400,
+   "quads": 140,
+   "tris": 28,
+   "ngons": 12,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "OpticBody": {
+   "faces": 128,
+   "triangles_total": 256,
+   "quads": 128,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "OpticLenses": {
+   "faces": 28,
+   "triangles_total": 88,
+   "quads": 24,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "RedDot": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "TopTurret": {
+   "faces": 159,
+   "triangles_total": 384,
+   "quads": 136,
+   "tris": 14,
+   "ngons": 9,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SideTurret": {
+   "faces": 38,
+   "triangles_total": 92,
+   "quads": 36,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "RearSight": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "FrontSight": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Foregrip": {
+   "faces": 154,
+   "triangles_total": 336,
+   "quads": 146,
+   "tris": 4,
+   "ngons": 4,
+   "shells": 1,
+   "symmetry": 0.518
+  },
+  "LightMount": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "WeaponLight": {
+   "faces": 144,
+   "triangles_total": 272,
+   "quads": 96,
+   "tris": 32,
+   "ngons": 16,
+   "shells": 1,
+   "symmetry": 0.188
+  },
+  "LightLens": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LightGrip": {
+   "faces": 144,
+   "triangles_total": 288,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Magazine": {
+   "faces": 340,
+   "triangles_total": 1022,
+   "quads": 317,
+   "tris": 0,
+   "ngons": 23,
+   "shells": 1,
+   "symmetry": 0.027
+  },
+  "MagBase": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  1.026,
+  0.085,
+  0.346
+ ],
+ "blender": "5.2.3"
+}

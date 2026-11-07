@@ -1,0 +1,116 @@
+{
+ "name": "lantern_fantasy",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 2412,
+ "budget": 2700,
+ "build_seconds": 0.3,
+ "objects": {
+  "Base": {
+   "faces": 180,
+   "triangles_total": 360,
+   "quads": 162,
+   "tris": 12,
+   "ngons": 6,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Rivets": {
+   "faces": 78,
+   "triangles_total": 180,
+   "quads": 72,
+   "tris": 0,
+   "ngons": 6,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "Panes": {
+   "faces": 8,
+   "triangles_total": 20,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Posts": {
+   "faces": 156,
+   "triangles_total": 264,
+   "quads": 108,
+   "tris": 48,
+   "ngons": 0,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "BandBottom": {
+   "faces": 84,
+   "triangles_total": 168,
+   "quads": 60,
+   "tris": 12,
+   "ngons": 12,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BandTop": {
+   "faces": 84,
+   "triangles_total": 168,
+   "quads": 60,
+   "tris": 12,
+   "ngons": 12,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CrossBars": {
+   "faces": 156,
+   "triangles_total": 264,
+   "quads": 108,
+   "tris": 48,
+   "ngons": 0,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "Roof": {
+   "faces": 162,
+   "triangles_total": 312,
+   "quads": 150,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "RoofTrim": {
+   "faces": 84,
+   "triangles_total": 168,
+   "quads": 60,
+   "tris": 12,
+   "ngons": 12,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Finial": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Ring": {
+   "faces": 200,
+   "triangles_total": 400,
+   "quads": 200,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.236,
+  0.212,
+  0.443
+ ],
+ "blender": "5.2.3"
+}

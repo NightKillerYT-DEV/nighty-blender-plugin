@@ -1,0 +1,161 @@
+{
+ "name": "ammo_box",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 4912,
+ "budget": 5500,
+ "build_seconds": 0.3,
+ "objects": {
+  "Can": {
+   "faces": 318,
+   "triangles_total": 764,
+   "quads": 310,
+   "tris": 0,
+   "ngons": 8,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BottomRim": {
+   "faces": 142,
+   "triangles_total": 332,
+   "quads": 140,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SidePanels": {
+   "faces": 148,
+   "triangles_total": 376,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "Lid": {
+   "faces": 170,
+   "triangles_total": 388,
+   "quads": 168,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Handle": {
+   "faces": 242,
+   "triangles_total": 508,
+   "quads": 240,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HandleClip": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HandleClip.001": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LatchBracket": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LatchPin": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Latch": {
+   "faces": 58,
+   "triangles_total": 116,
+   "quads": 58,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.933
+  },
+  "LatchHook": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HingeLeaf": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HingeKnuckles": {
+   "faces": 54,
+   "triangles_total": 180,
+   "quads": 48,
+   "tris": 0,
+   "ngons": 6,
+   "shells": 3,
+   "symmetry": 1.0
+  },
+  "Stencil": {
+   "faces": 685,
+   "triangles_total": 928,
+   "quads": 243,
+   "tris": 442,
+   "ngons": 0,
+   "shells": 16,
+   "symmetry": 0.091
+  },
+  "Stencil.001": {
+   "faces": 332,
+   "triangles_total": 444,
+   "quads": 112,
+   "tris": 220,
+   "ngons": 0,
+   "shells": 7,
+   "symmetry": 0.018
+  },
+  "Stencil.002": {
+   "faces": 213,
+   "triangles_total": 292,
+   "quads": 79,
+   "tris": 134,
+   "ngons": 0,
+   "shells": 8,
+   "symmetry": 0.051
+  }
+ },
+ "size_m": [
+  0.322,
+  0.163,
+  0.252
+ ],
+ "blender": "5.2.3"
+}

@@ -1,0 +1,107 @@
+{
+ "name": "potion_bottle",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 4712,
+ "budget": 5500,
+ "build_seconds": 0.4,
+ "objects": {
+  "Bottle": {
+   "faces": 952,
+   "triangles_total": 1848,
+   "quads": 896,
+   "tris": 56,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Liquid": {
+   "faces": 280,
+   "triangles_total": 504,
+   "quads": 224,
+   "tris": 56,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Bubbles": {
+   "faces": 72,
+   "triangles_total": 144,
+   "quads": 72,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 3,
+   "symmetry": 0.333
+  },
+  "Cork": {
+   "faces": 182,
+   "triangles_total": 396,
+   "quads": 180,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "WaxSeal": {
+   "faces": 181,
+   "triangles_total": 382,
+   "quads": 180,
+   "tris": 0,
+   "ngons": 1,
+   "shells": 4,
+   "symmetry": 0.608
+  },
+  "Collar": {
+   "faces": 192,
+   "triangles_total": 384,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Twine": {
+   "faces": 288,
+   "triangles_total": 576,
+   "quads": 288,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "TagString": {
+   "faces": 86,
+   "triangles_total": 188,
+   "quads": 84,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.031
+  },
+  "Tag": {
+   "faces": 71,
+   "triangles_total": 180,
+   "quads": 65,
+   "tris": 0,
+   "ngons": 6,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "TagStamp": {
+   "faces": 49,
+   "triangles_total": 110,
+   "quads": 48,
+   "tris": 0,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.132,
+  0.14,
+  0.175
+ ],
+ "blender": "5.2.3"
+}

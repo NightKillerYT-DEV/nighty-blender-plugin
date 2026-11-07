@@ -1,0 +1,170 @@
+{
+ "name": "street_lamp",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 3456,
+ "budget": 3800,
+ "build_seconds": 0.3,
+ "objects": {
+  "Plinth": {
+   "faces": 26,
+   "triangles_total": 44,
+   "quads": 18,
+   "tris": 8,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "PlinthBolts": {
+   "faces": 320,
+   "triangles_total": 656,
+   "quads": 312,
+   "tris": 0,
+   "ngons": 8,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "Base": {
+   "faces": 70,
+   "triangles_total": 140,
+   "quads": 70,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Door": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Hinges": {
+   "faces": 28,
+   "triangles_total": 88,
+   "quads": 24,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "DoorLock": {
+   "faces": 152,
+   "triangles_total": 344,
+   "quads": 146,
+   "tris": 0,
+   "ngons": 6,
+   "shells": 1,
+   "symmetry": 0.983
+  },
+  "BaseCap": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BaseShoulder": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Pole": {
+   "faces": 384,
+   "triangles_total": 736,
+   "quads": 352,
+   "tris": 32,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LadderBar": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LadderBalls": {
+   "faces": 108,
+   "triangles_total": 216,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "LanternSeat": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Glass": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LanternFrame": {
+   "faces": 312,
+   "triangles_total": 528,
+   "quads": 216,
+   "tris": 96,
+   "ngons": 0,
+   "shells": 12,
+   "symmetry": 1.0
+  },
+  "Roof": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Eave": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Finial": {
+   "faces": 60,
+   "triangles_total": 96,
+   "quads": 36,
+   "tris": 24,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.46,
+  0.677,
+  4.06
+ ],
+ "blender": "5.2.3"
+}

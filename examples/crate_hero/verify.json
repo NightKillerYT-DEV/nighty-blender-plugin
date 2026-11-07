@@ -1,0 +1,152 @@
+{
+ "name": "crate_hero",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 8584,
+ "budget": 9500,
+ "build_seconds": 1.2,
+ "objects": {
+  "Core": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Planks": {
+   "faces": 1296,
+   "triangles_total": 2592,
+   "quads": 1296,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 24,
+   "symmetry": 0.792
+  },
+  "Frame": {
+   "faces": 648,
+   "triangles_total": 1296,
+   "quads": 648,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 12,
+   "symmetry": 1.0
+  },
+  "Braces": {
+   "faces": 108,
+   "triangles_total": 216,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 0.5
+  },
+  "Brackets": {
+   "faces": 768,
+   "triangles_total": 1632,
+   "quads": 744,
+   "tris": 0,
+   "ngons": 24,
+   "shells": 8,
+   "symmetry": 1.0
+  },
+  "BracketNails": {
+   "faces": 312,
+   "triangles_total": 720,
+   "quads": 288,
+   "tris": 0,
+   "ngons": 24,
+   "shells": 24,
+   "symmetry": 1.0
+  },
+  "Nails": {
+   "faces": 208,
+   "triangles_total": 480,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 16,
+   "shells": 16,
+   "symmetry": 1.0
+  },
+  "HandlePlate": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Handle": {
+   "faces": 134,
+   "triangles_total": 284,
+   "quads": 132,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.167
+  },
+  "PlateNails": {
+   "faces": 26,
+   "triangles_total": 60,
+   "quads": 24,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 2,
+   "symmetry": 0.471
+  },
+  "HandlePlate.001": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Handle.001": {
+   "faces": 134,
+   "triangles_total": 284,
+   "quads": 132,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.167
+  },
+  "PlateNails.001": {
+   "faces": 26,
+   "triangles_total": 60,
+   "quads": 24,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 2,
+   "symmetry": 0.471
+  },
+  "Stencil": {
+   "faces": 289,
+   "triangles_total": 396,
+   "quads": 107,
+   "tris": 182,
+   "ngons": 0,
+   "shells": 9,
+   "symmetry": 0.075
+  },
+  "Stencil.001": {
+   "faces": 247,
+   "triangles_total": 336,
+   "quads": 89,
+   "tris": 158,
+   "ngons": 0,
+   "shells": 7,
+   "symmetry": 0.067
+  }
+ },
+ "size_m": [
+  0.758,
+  0.51,
+  0.51
+ ],
+ "blender": "5.2.3"
+}

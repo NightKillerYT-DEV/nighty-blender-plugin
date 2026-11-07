@@ -1,0 +1,125 @@
+{
+ "name": "lamp_desk",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 4844,
+ "budget": 5500,
+ "build_seconds": 0.3,
+ "objects": {
+  "Foot": {
+   "faces": 96,
+   "triangles_total": 128,
+   "quads": 32,
+   "tris": 64,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Base": {
+   "faces": 320,
+   "triangles_total": 576,
+   "quads": 256,
+   "tris": 64,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Bracket": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Switch": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "JointBase": {
+   "faces": 100,
+   "triangles_total": 248,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "JointElbow": {
+   "faces": 100,
+   "triangles_total": 248,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "JointHead": {
+   "faces": 100,
+   "triangles_total": 248,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "LowerArm": {
+   "faces": 28,
+   "triangles_total": 88,
+   "quads": 24,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 0.0
+  },
+  "UpperArm": {
+   "faces": 28,
+   "triangles_total": 88,
+   "quads": 24,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 0.0
+  },
+  "Spring": {
+   "faces": 642,
+   "triangles_total": 1296,
+   "quads": 636,
+   "tris": 0,
+   "ngons": 6,
+   "shells": 3,
+   "symmetry": 0.003
+  },
+  "Head": {
+   "faces": 752,
+   "triangles_total": 1496,
+   "quads": 684,
+   "tris": 64,
+   "ngons": 4,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "Cable": {
+   "faces": 98,
+   "triangles_total": 212,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  }
+ },
+ "size_m": [
+  0.671,
+  0.194,
+  0.373
+ ],
+ "blender": "5.2.3"
+}

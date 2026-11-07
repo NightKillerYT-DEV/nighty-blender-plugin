@@ -1,0 +1,107 @@
+{
+ "name": "key_ornate",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 2856,
+ "budget": 3200,
+ "build_seconds": 0.3,
+ "objects": {
+  "Bow": {
+   "faces": 532,
+   "triangles_total": 1216,
+   "quads": 528,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 1,
+   "symmetry": 0.928
+  },
+  "Spokes": {
+   "faces": 24,
+   "triangles_total": 48,
+   "quads": 24,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "BowCenter": {
+   "faces": 142,
+   "triangles_total": 332,
+   "quads": 140,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Sapphire": {
+   "faces": 32,
+   "triangles_total": 48,
+   "quads": 16,
+   "tris": 16,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Shaft": {
+   "faces": 22,
+   "triangles_total": 76,
+   "quads": 20,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Knob": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Collar": {
+   "faces": 122,
+   "triangles_total": 284,
+   "quads": 120,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Collar.001": {
+   "faces": 122,
+   "triangles_total": 284,
+   "quads": 120,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Bit": {
+   "faces": 161,
+   "triangles_total": 352,
+   "quads": 159,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.337
+  },
+  "Tip": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.137,
+  0.085,
+  0.018
+ ],
+ "blender": "5.2.3"
+}

@@ -1,0 +1,242 @@
+{
+ "name": "chest_hero",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 14228,
+ "budget": 15000,
+ "build_seconds": 1.6,
+ "objects": {
+  "Core": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BodyPlanks": {
+   "faces": 648,
+   "triangles_total": 1296,
+   "quads": 648,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 12,
+   "symmetry": 1.0
+  },
+  "BodyFrame": {
+   "faces": 648,
+   "triangles_total": 1296,
+   "quads": 648,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 12,
+   "symmetry": 1.0
+  },
+  "LidFrame": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Lid": {
+   "faces": 773,
+   "triangles_total": 1664,
+   "quads": 755,
+   "tris": 4,
+   "ngons": 14,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LidBand": {
+   "faces": 204,
+   "triangles_total": 468,
+   "quads": 202,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LidBand.001": {
+   "faces": 204,
+   "triangles_total": 468,
+   "quads": 202,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LidTrim": {
+   "faces": 204,
+   "triangles_total": 468,
+   "quads": 202,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LidTrim.001": {
+   "faces": 204,
+   "triangles_total": 468,
+   "quads": 202,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Rivets": {
+   "faces": 208,
+   "triangles_total": 480,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 16,
+   "shells": 16,
+   "symmetry": 1.0
+  },
+  "BodyBands": {
+   "faces": 520,
+   "triangles_total": 1040,
+   "quads": 520,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "CornerGuards": {
+   "faces": 768,
+   "triangles_total": 1632,
+   "quads": 744,
+   "tris": 0,
+   "ngons": 24,
+   "shells": 8,
+   "symmetry": 1.0
+  },
+  "GuardNails": {
+   "faces": 312,
+   "triangles_total": 720,
+   "quads": 288,
+   "tris": 0,
+   "ngons": 24,
+   "shells": 24,
+   "symmetry": 1.0
+  },
+  "LockPlate": {
+   "faces": 447,
+   "triangles_total": 972,
+   "quads": 443,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Hasp": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Ruby": {
+   "faces": 32,
+   "triangles_total": 48,
+   "quads": 16,
+   "tris": 16,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HandlePlate": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HandleRing": {
+   "faces": 288,
+   "triangles_total": 576,
+   "quads": 288,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HandlePlate.001": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HandleRing.001": {
+   "faces": 288,
+   "triangles_total": 576,
+   "quads": 288,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Foot": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Foot.001": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Foot.002": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Foot.003": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Coins": {
+   "faces": 510,
+   "triangles_total": 1180,
+   "quads": 500,
+   "tris": 0,
+   "ngons": 10,
+   "shells": 5,
+   "symmetry": 0.207
+  }
+ },
+ "size_m": [
+  0.801,
+  0.628,
+  0.539
+ ],
+ "blender": "5.2.3"
+}

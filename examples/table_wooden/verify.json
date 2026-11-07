@@ -1,0 +1,62 @@
+{
+ "name": "table_wooden",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 3676,
+ "budget": 4000,
+ "build_seconds": 0.6,
+ "objects": {
+  "TopBoards": {
+   "faces": 270,
+   "triangles_total": 540,
+   "quads": 270,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 5,
+   "symmetry": 1.0
+  },
+  "BreadboardEnds": {
+   "faces": 108,
+   "triangles_total": 216,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "DowelPlugs": {
+   "faces": 84,
+   "triangles_total": 264,
+   "quads": 72,
+   "tris": 0,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "Legs": {
+   "faces": 1304,
+   "triangles_total": 2480,
+   "quads": 1176,
+   "tris": 128,
+   "ngons": 0,
+   "shells": 8,
+   "symmetry": 1.0
+  },
+  "Apron": {
+   "faces": 104,
+   "triangles_total": 176,
+   "quads": 72,
+   "tris": 32,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  1.598,
+  0.9,
+  0.763
+ ],
+ "blender": "5.2.3"
+}

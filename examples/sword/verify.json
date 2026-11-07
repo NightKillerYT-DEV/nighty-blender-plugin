@@ -1,0 +1,197 @@
+{
+ "name": "sword",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 4600,
+ "budget": 5000,
+ "build_seconds": 0.6,
+ "objects": {
+  "Blade": {
+   "faces": 68,
+   "triangles_total": 192,
+   "quads": 56,
+   "tris": 6,
+   "ngons": 6,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "RuneGlow": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BladeCollar": {
+   "faces": 187,
+   "triangles_total": 512,
+   "quads": 169,
+   "tris": 4,
+   "ngons": 14,
+   "shells": 1,
+   "symmetry": 0.953
+  },
+  "Crossguard": {
+   "faces": 326,
+   "triangles_total": 716,
+   "quads": 324,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GuardTip": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GuardTip.001": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GuardBlock": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GemBezel": {
+   "faces": 96,
+   "triangles_total": 192,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GuardGem": {
+   "faces": 32,
+   "triangles_total": 48,
+   "quads": 16,
+   "tris": 16,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GemBezel.001": {
+   "faces": 96,
+   "triangles_total": 192,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GuardGem.001": {
+   "faces": 32,
+   "triangles_total": 48,
+   "quads": 16,
+   "tris": 16,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Grip": {
+   "faces": 18,
+   "triangles_total": 60,
+   "quads": 16,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GripWrap": {
+   "faces": 146,
+   "triangles_total": 316,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GripWrap.001": {
+   "faces": 146,
+   "triangles_total": 316,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GripWrap.002": {
+   "faces": 146,
+   "triangles_total": 316,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GripWrap.003": {
+   "faces": 146,
+   "triangles_total": 316,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GripRing": {
+   "faces": 146,
+   "triangles_total": 316,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GripRing.001": {
+   "faces": 146,
+   "triangles_total": 316,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Pommel": {
+   "faces": 200,
+   "triangles_total": 360,
+   "quads": 160,
+   "tris": 40,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "PommelGem": {
+   "faces": 32,
+   "triangles_total": 48,
+   "quads": 16,
+   "tris": 16,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.345,
+  0.185,
+  1.033
+ ],
+ "blender": "5.2.3"
+}

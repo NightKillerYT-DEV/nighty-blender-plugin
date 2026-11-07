@@ -1,0 +1,98 @@
+{
+ "name": "medkit",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 3820,
+ "budget": 4200,
+ "build_seconds": 0.6,
+ "objects": {
+  "Case": {
+   "faces": 302,
+   "triangles_total": 864,
+   "quads": 285,
+   "tris": 0,
+   "ngons": 17,
+   "shells": 1,
+   "symmetry": 0.885
+  },
+  "CrossFront": {
+   "faces": 222,
+   "triangles_total": 524,
+   "quads": 220,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Bumpers": {
+   "faces": 216,
+   "triangles_total": 432,
+   "quads": 216,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "SeamBand": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Lid": {
+   "faces": 150,
+   "triangles_total": 300,
+   "quads": 150,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CrossTop": {
+   "faces": 262,
+   "triangles_total": 620,
+   "quads": 260,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HandleMounts": {
+   "faces": 108,
+   "triangles_total": 216,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "Handle": {
+   "faces": 242,
+   "triangles_total": 508,
+   "quads": 240,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Latches": {
+   "faces": 120,
+   "triangles_total": 248,
+   "quads": 118,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 2,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.418,
+  0.267,
+  0.259
+ ],
+ "blender": "5.2.3"
+}

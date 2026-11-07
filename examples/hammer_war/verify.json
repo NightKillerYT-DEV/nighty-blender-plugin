@@ -1,0 +1,251 @@
+{
+ "name": "hammer_war",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 7464,
+ "budget": 8000,
+ "build_seconds": 0.5,
+ "objects": {
+  "HeadCore": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "StrikeDrum": {
+   "faces": 290,
+   "triangles_total": 636,
+   "quads": 288,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "StrikeFace": {
+   "faces": 290,
+   "triangles_total": 636,
+   "quads": 288,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "DrumBand": {
+   "faces": 192,
+   "triangles_total": 384,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "DrumRim": {
+   "faces": 192,
+   "triangles_total": 384,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GemBezel": {
+   "faces": 96,
+   "triangles_total": 192,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HeadRuby": {
+   "faces": 32,
+   "triangles_total": 48,
+   "quads": 16,
+   "tris": 16,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "StrikeDrum.001": {
+   "faces": 290,
+   "triangles_total": 636,
+   "quads": 288,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "StrikeFace.001": {
+   "faces": 290,
+   "triangles_total": 636,
+   "quads": 288,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "DrumBand.001": {
+   "faces": 192,
+   "triangles_total": 384,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "DrumRim.001": {
+   "faces": 192,
+   "triangles_total": 384,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GemBezel.001": {
+   "faces": 96,
+   "triangles_total": 192,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HeadRuby.001": {
+   "faces": 32,
+   "triangles_total": 48,
+   "quads": 16,
+   "tris": 16,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "TopSpike": {
+   "faces": 48,
+   "triangles_total": 72,
+   "quads": 24,
+   "tris": 24,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SpikeCollar": {
+   "faces": 26,
+   "triangles_total": 92,
+   "quads": 24,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Haft": {
+   "faces": 18,
+   "triangles_total": 60,
+   "quads": 16,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HeadCollar": {
+   "faces": 22,
+   "triangles_total": 76,
+   "quads": 20,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Langet": {
+   "faces": 32,
+   "triangles_total": 56,
+   "quads": 20,
+   "tris": 10,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LangetRivets": {
+   "faces": 98,
+   "triangles_total": 220,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "Langet.001": {
+   "faces": 32,
+   "triangles_total": 56,
+   "quads": 20,
+   "tris": 10,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LangetRivets.001": {
+   "faces": 98,
+   "triangles_total": 220,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "GripBand": {
+   "faces": 182,
+   "triangles_total": 396,
+   "quads": 180,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GripBand.001": {
+   "faces": 182,
+   "triangles_total": 396,
+   "quads": 180,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GripBand.002": {
+   "faces": 182,
+   "triangles_total": 396,
+   "quads": 180,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GripBand.003": {
+   "faces": 182,
+   "triangles_total": 396,
+   "quads": 180,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Pommel": {
+   "faces": 200,
+   "triangles_total": 360,
+   "quads": 160,
+   "tris": 40,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.385,
+  0.269,
+  0.98
+ ],
+ "blender": "5.2.3"
+}

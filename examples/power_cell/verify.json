@@ -1,0 +1,152 @@
+{
+ "name": "power_cell",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 5170,
+ "budget": 5700,
+ "build_seconds": 0.5,
+ "objects": {
+  "BottomCap": {
+   "faces": 352,
+   "triangles_total": 640,
+   "quads": 288,
+   "tris": 64,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "TopCap": {
+   "faces": 352,
+   "triangles_total": 640,
+   "quads": 288,
+   "tris": 64,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CapBand": {
+   "faces": 128,
+   "triangles_total": 256,
+   "quads": 128,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CapBand.001": {
+   "faces": 128,
+   "triangles_total": 256,
+   "quads": 128,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CapScrews": {
+   "faces": 240,
+   "triangles_total": 492,
+   "quads": 234,
+   "tris": 0,
+   "ngons": 6,
+   "shells": 3,
+   "symmetry": 0.333
+  },
+  "GlassTube": {
+   "faces": 34,
+   "triangles_total": 124,
+   "quads": 32,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Core": {
+   "faces": 26,
+   "triangles_total": 92,
+   "quads": 24,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CoilRing": {
+   "faces": 144,
+   "triangles_total": 288,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CoilRing.001": {
+   "faces": 144,
+   "triangles_total": 288,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CageBars": {
+   "faces": 162,
+   "triangles_total": 324,
+   "quads": 162,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 3,
+   "symmetry": 0.333
+  },
+  "ClampRing": {
+   "faces": 192,
+   "triangles_total": 384,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Meter": {
+   "faces": 164,
+   "triangles_total": 516,
+   "quads": 153,
+   "tris": 0,
+   "ngons": 11,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "MeterPips": {
+   "faces": 30,
+   "triangles_total": 60,
+   "quads": 30,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 5,
+   "symmetry": 1.0
+  },
+  "Handle": {
+   "faces": 274,
+   "triangles_total": 572,
+   "quads": 272,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "StatusLight": {
+   "faces": 109,
+   "triangles_total": 238,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.14,
+  0.138,
+  0.345
+ ],
+ "blender": "5.2.3"
+}

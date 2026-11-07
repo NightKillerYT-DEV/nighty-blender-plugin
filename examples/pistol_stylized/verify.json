@@ -1,0 +1,188 @@
+{
+ "name": "pistol_stylized",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 5458,
+ "budget": 6000,
+ "build_seconds": 1.3,
+ "objects": {
+  "Slide": {
+   "faces": 463,
+   "triangles_total": 1314,
+   "quads": 431,
+   "tris": 0,
+   "ngons": 32,
+   "shells": 1,
+   "symmetry": 0.112
+  },
+  "SlideGlow": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SlideGlow.001": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Chamber": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "TopStripe": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Frame": {
+   "faces": 635,
+   "triangles_total": 1388,
+   "quads": 629,
+   "tris": 2,
+   "ngons": 4,
+   "shells": 1,
+   "symmetry": 0.017
+  },
+  "Grip": {
+   "faces": 211,
+   "triangles_total": 448,
+   "quads": 209,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "GripPanels": {
+   "faces": 238,
+   "triangles_total": 740,
+   "quads": 224,
+   "tris": 0,
+   "ngons": 14,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "MagPlate": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Trigger": {
+   "faces": 59,
+   "triangles_total": 132,
+   "quads": 49,
+   "tris": 8,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "Barrel": {
+   "faces": 160,
+   "triangles_total": 320,
+   "quads": 160,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BoreGlow": {
+   "faces": 18,
+   "triangles_total": 60,
+   "quads": 16,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "FrontSight": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "RearSight": {
+   "faces": 50,
+   "triangles_total": 100,
+   "quads": 36,
+   "tris": 12,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Hammer": {
+   "faces": 62,
+   "triangles_total": 148,
+   "quads": 56,
+   "tris": 4,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "SlideStop": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "FrameInsert": {
+   "faces": 66,
+   "triangles_total": 140,
+   "quads": 48,
+   "tris": 16,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.889
+  },
+  "TakedownPin": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "MagRelease": {
+   "faces": 18,
+   "triangles_total": 60,
+   "quads": 16,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.257,
+  0.036,
+  0.184
+ ],
+ "blender": "5.2.3"
+}

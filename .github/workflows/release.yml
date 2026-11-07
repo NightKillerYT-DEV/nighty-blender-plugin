@@ -1,0 +1,76 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# github.com/NightKillerYT-DEV/nighty-blender-plugin. On a tag vX.Y.Z: build the add-on zip (checked by Blender 4.2 LTS), pin its SHA-256 into the plugin, build the
+# .nightyplugin, skills.zip and SHA256SUMS (scripts/build_release.py), attest them, and attach them to a DRAFT release
+# (the owner reviews and publishes it by hand).
+name: Release
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: write        # create the draft release
+  id-token: write        # build attestations (Sigstore)
+  attestations: write
+
+env:
+  BLENDER_SERIES: "4.2"
+  BLENDER_VERSION: "4.2.23"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generated files are up to date
+        run: python scripts/gen_plugin_json.py --check
+
+      - name: Plugin tests (no Blender, no network)
+        run: node tests/plugin/unit.mjs
+
+      - name: Get Blender ${{ env.BLENDER_VERSION }} (checked against blender.org's SHA-256 list)
+        run: |
+          set -euo pipefail
+          base="https://download.blender.org/release/Blender${BLENDER_SERIES}"
+          file="blender-${BLENDER_VERSION}-linux-x64.tar.xz"
+          curl -fsSL -o "$file" "$base/$file"
+          curl -fsSL -o blender.sha256 "$base/blender-${BLENDER_VERSION}.sha256"
+          grep " ${file}\$" blender.sha256 | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/blender"
+          tar -xf "$file" -C "$RUNNER_TEMP/blender" --strip-components=1
+          echo "BLENDER=$RUNNER_TEMP/blender/blender" >> "$GITHUB_ENV"
+
+      - name: Build the release files
+        run: python scripts/build_release.py --tag "${GITHUB_REF_NAME}" --out dist/release --blender "$BLENDER"
+
+      - name: Add-on tests (headless, sandboxed)
+        run: python scripts/run_tests.py --blender "$BLENDER"
+
+      - name: Attest the build
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: |
+            dist/release/*.zip
+            dist/release/*.nightyplugin
+            dist/release/SHA256SUMS
+
+      - name: Draft the GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          name: Nighty Blender ${{ github.ref_name }}
+          body_path: CHANGELOG.md
+          files: |
+            dist/release/nighty_blender-*.zip
+            dist/release/nighty-blender-*.nightyplugin
+            dist/release/skills.zip
+            dist/release/SHA256SUMS

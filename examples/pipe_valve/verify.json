@@ -1,0 +1,395 @@
+{
+ "name": "pipe_valve",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 11068,
+ "budget": 12000,
+ "build_seconds": 0.9,
+ "objects": {
+  "Pipe": {
+   "faces": 242,
+   "triangles_total": 524,
+   "quads": 240,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "EndFlangeA": {
+   "faces": 98,
+   "triangles_total": 252,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "EndFlangeB": {
+   "faces": 98,
+   "triangles_total": 252,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "EndFlangeGasket": {
+   "faces": 30,
+   "triangles_total": 108,
+   "quads": 28,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "EndFlangeNutsB": {
+   "faces": 228,
+   "triangles_total": 408,
+   "quads": 144,
+   "tris": 72,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "EndFlangeNutsA": {
+   "faces": 228,
+   "triangles_total": 408,
+   "quads": 144,
+   "tris": 72,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "JointAA": {
+   "faces": 98,
+   "triangles_total": 252,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "JointAB": {
+   "faces": 98,
+   "triangles_total": 252,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "JointAGasket": {
+   "faces": 30,
+   "triangles_total": 108,
+   "quads": 28,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "JointANutsB": {
+   "faces": 228,
+   "triangles_total": 408,
+   "quads": 144,
+   "tris": 72,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "JointANutsA": {
+   "faces": 228,
+   "triangles_total": 408,
+   "quads": 144,
+   "tris": 72,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "JointBA": {
+   "faces": 98,
+   "triangles_total": 252,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "JointBB": {
+   "faces": 98,
+   "triangles_total": 252,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "JointBGasket": {
+   "faces": 30,
+   "triangles_total": 108,
+   "quads": 28,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "JointBNutsB": {
+   "faces": 228,
+   "triangles_total": 408,
+   "quads": 144,
+   "tris": 72,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "JointBNutsA": {
+   "faces": 228,
+   "triangles_total": 408,
+   "quads": 144,
+   "tris": 72,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "TopFlangeA": {
+   "faces": 98,
+   "triangles_total": 252,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "TopFlangeB": {
+   "faces": 98,
+   "triangles_total": 252,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "TopFlangeGasket": {
+   "faces": 30,
+   "triangles_total": 108,
+   "quads": 28,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "TopFlangeNutsB": {
+   "faces": 228,
+   "triangles_total": 408,
+   "quads": 144,
+   "tris": 72,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 0.167
+  },
+  "TopFlangeNutsA": {
+   "faces": 228,
+   "triangles_total": 408,
+   "quads": 144,
+   "tris": 72,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 0.167
+  },
+  "ValveBody": {
+   "faces": 338,
+   "triangles_total": 724,
+   "quads": 336,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "ValveNeck": {
+   "faces": 122,
+   "triangles_total": 284,
+   "quads": 120,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BonnetFlange": {
+   "faces": 86,
+   "triangles_total": 220,
+   "quads": 84,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BonnetNuts": {
+   "faces": 228,
+   "triangles_total": 408,
+   "quads": 144,
+   "tris": 72,
+   "ngons": 12,
+   "shells": 6,
+   "symmetry": 0.167
+  },
+  "Bonnet": {
+   "faces": 120,
+   "triangles_total": 192,
+   "quads": 72,
+   "tris": 48,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Yoke": {
+   "faces": 180,
+   "triangles_total": 384,
+   "quads": 178,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "HandWheel": {
+   "faces": 536,
+   "triangles_total": 1176,
+   "quads": 524,
+   "tris": 0,
+   "ngons": 12,
+   "shells": 7,
+   "symmetry": 0.833
+  },
+  "Stem": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GaugeNipple": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GaugeNut": {
+   "faces": 8,
+   "triangles_total": 20,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GaugeHousing": {
+   "faces": 102,
+   "triangles_total": 236,
+   "quads": 100,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GaugeDial": {
+   "faces": 22,
+   "triangles_total": 76,
+   "quads": 20,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GaugeNeedle": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GaugeGlass": {
+   "faces": 22,
+   "triangles_total": 76,
+   "quads": 20,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SupportBase": {
+   "faces": 26,
+   "triangles_total": 44,
+   "quads": 18,
+   "tris": 8,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "AnchorNuts": {
+   "faces": 152,
+   "triangles_total": 272,
+   "quads": 96,
+   "tris": 48,
+   "ngons": 8,
+   "shells": 4,
+   "symmetry": 0.5
+  },
+  "SupportPost": {
+   "faces": 26,
+   "triangles_total": 44,
+   "quads": 18,
+   "tris": 8,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Saddle": {
+   "faces": 53,
+   "triangles_total": 108,
+   "quads": 39,
+   "tris": 12,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "UBolt": {
+   "faces": 158,
+   "triangles_total": 332,
+   "quads": 156,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "UBoltNut": {
+   "faces": 38,
+   "triangles_total": 68,
+   "quads": 24,
+   "tris": 12,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "UBoltNut.001": {
+   "faces": 38,
+   "triangles_total": 68,
+   "quads": 24,
+   "tris": 12,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  1.229,
+  0.304,
+  1.079
+ ],
+ "blender": "5.2.3"
+}

@@ -1,0 +1,89 @@
+{
+ "name": "bench_park",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 6138,
+ "budget": 7000,
+ "build_seconds": 1.0,
+ "objects": {
+  "Frames": {
+   "faces": 1380,
+   "triangles_total": 3144,
+   "quads": 1362,
+   "tris": 0,
+   "ngons": 18,
+   "shells": 3,
+   "symmetry": 1.0
+  },
+  "FootPlates": {
+   "faces": 216,
+   "triangles_total": 432,
+   "quads": 216,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "FootBolts": {
+   "faces": 320,
+   "triangles_total": 656,
+   "quads": 312,
+   "tris": 0,
+   "ngons": 8,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "SeatSlats": {
+   "faces": 216,
+   "triangles_total": 432,
+   "quads": 216,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "BackSlats": {
+   "faces": 162,
+   "triangles_total": 324,
+   "quads": 162,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 3,
+   "symmetry": 1.0
+  },
+  "Armrests": {
+   "faces": 244,
+   "triangles_total": 520,
+   "quads": 240,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "SeatBolts": {
+   "faces": 156,
+   "triangles_total": 360,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 12,
+   "shells": 12,
+   "symmetry": 1.0
+  },
+  "BackBolts": {
+   "faces": 117,
+   "triangles_total": 270,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 9,
+   "shells": 9,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  1.5,
+  0.651,
+  0.844
+ ],
+ "blender": "5.2.3"
+}

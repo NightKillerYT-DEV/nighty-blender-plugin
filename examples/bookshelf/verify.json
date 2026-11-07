@@ -1,0 +1,170 @@
+{
+ "name": "bookshelf",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 6836,
+ "budget": 7500,
+ "build_seconds": 2.9,
+ "objects": {
+  "Carcass": {
+   "faces": 162,
+   "triangles_total": 324,
+   "quads": 162,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 3,
+   "symmetry": 1.0
+  },
+  "Stiles": {
+   "faces": 108,
+   "triangles_total": 216,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "TopRail": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Crown": {
+   "faces": 108,
+   "triangles_total": 216,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "Plinth": {
+   "faces": 26,
+   "triangles_total": 44,
+   "quads": 18,
+   "tris": 8,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Back": {
+   "faces": 486,
+   "triangles_total": 972,
+   "quads": 486,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 9,
+   "symmetry": 1.0
+  },
+  "Shelves": {
+   "faces": 270,
+   "triangles_total": 540,
+   "quads": 270,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 5,
+   "symmetry": 1.0
+  },
+  "BookCloth2": {
+   "faces": 234,
+   "triangles_total": 396,
+   "quads": 162,
+   "tris": 72,
+   "ngons": 0,
+   "shells": 9,
+   "symmetry": 0.111
+  },
+  "BookLeather2": {
+   "faces": 312,
+   "triangles_total": 528,
+   "quads": 216,
+   "tris": 96,
+   "ngons": 0,
+   "shells": 12,
+   "symmetry": 0.083
+  },
+  "BookGold": {
+   "faces": 228,
+   "triangles_total": 456,
+   "quads": 228,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 38,
+   "symmetry": 0.053
+  },
+  "BookCloth4": {
+   "faces": 312,
+   "triangles_total": 528,
+   "quads": 216,
+   "tris": 96,
+   "ngons": 0,
+   "shells": 12,
+   "symmetry": 0.083
+  },
+  "BookLeather1": {
+   "faces": 260,
+   "triangles_total": 440,
+   "quads": 180,
+   "tris": 80,
+   "ngons": 0,
+   "shells": 10,
+   "symmetry": 0.1
+  },
+  "BookCloth0": {
+   "faces": 390,
+   "triangles_total": 660,
+   "quads": 270,
+   "tris": 120,
+   "ngons": 0,
+   "shells": 15,
+   "symmetry": 0.067
+  },
+  "BookCloth3": {
+   "faces": 234,
+   "triangles_total": 396,
+   "quads": 162,
+   "tris": 72,
+   "ngons": 0,
+   "shells": 9,
+   "symmetry": 0.111
+  },
+  "BookCloth5": {
+   "faces": 286,
+   "triangles_total": 484,
+   "quads": 198,
+   "tris": 88,
+   "ngons": 0,
+   "shells": 11,
+   "symmetry": 0.182
+  },
+  "BookCloth1": {
+   "faces": 182,
+   "triangles_total": 308,
+   "quads": 126,
+   "tris": 56,
+   "ngons": 0,
+   "shells": 7,
+   "symmetry": 0.143
+  },
+  "BookLeather0": {
+   "faces": 130,
+   "triangles_total": 220,
+   "quads": 90,
+   "tris": 40,
+   "ngons": 0,
+   "shells": 5,
+   "symmetry": 0.2
+  }
+ },
+ "size_m": [
+  0.97,
+  0.37,
+  1.855
+ ],
+ "blender": "5.2.3"
+}

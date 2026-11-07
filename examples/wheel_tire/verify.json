@@ -1,0 +1,98 @@
+{
+ "name": "wheel_tire",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 8550,
+ "budget": 9500,
+ "build_seconds": 1.0,
+ "objects": {
+  "Tire": {
+   "faces": 1620,
+   "triangles_total": 4000,
+   "quads": 1300,
+   "tris": 0,
+   "ngons": 320,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "RimBarrel": {
+   "faces": 800,
+   "triangles_total": 1600,
+   "quads": 800,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Spokes": {
+   "faces": 426,
+   "triangles_total": 1136,
+   "quads": 420,
+   "tris": 0,
+   "ngons": 6,
+   "shells": 1,
+   "symmetry": 0.971
+  },
+  "HubFace": {
+   "faces": 98,
+   "triangles_total": 252,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "LugNuts": {
+   "faces": 190,
+   "triangles_total": 340,
+   "quads": 120,
+   "tris": 60,
+   "ngons": 10,
+   "shells": 5,
+   "symmetry": 1.0
+  },
+  "CenterCap": {
+   "faces": 109,
+   "triangles_total": 238,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BrakeDisc": {
+   "faces": 320,
+   "triangles_total": 640,
+   "quads": 320,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "DiscHat": {
+   "faces": 98,
+   "triangles_total": 252,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Caliper": {
+   "faces": 44,
+   "triangles_total": 92,
+   "quads": 34,
+   "tris": 8,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  }
+ },
+ "size_m": [
+  0.666,
+  0.227,
+  0.666
+ ],
+ "blender": "5.2.3"
+}

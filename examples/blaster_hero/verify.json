@@ -1,0 +1,422 @@
+{
+ "name": "blaster_hero",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 16616,
+ "budget": 18000,
+ "build_seconds": 1.4,
+ "objects": {
+  "Body": {
+   "faces": 344,
+   "triangles_total": 876,
+   "quads": 334,
+   "tris": 0,
+   "ngons": 10,
+   "shells": 1,
+   "symmetry": 0.086
+  },
+  "GrilleBars": {
+   "faces": 216,
+   "triangles_total": 432,
+   "quads": 216,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "GrilleLight": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Chassis": {
+   "faces": 532,
+   "triangles_total": 1268,
+   "quads": 454,
+   "tris": 56,
+   "ngons": 22,
+   "shells": 1,
+   "symmetry": 0.038
+  },
+  "SidePlate": {
+   "faces": 286,
+   "triangles_total": 672,
+   "quads": 243,
+   "tris": 36,
+   "ngons": 7,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "PlateBolts": {
+   "faces": 76,
+   "triangles_total": 136,
+   "quads": 48,
+   "tris": 24,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "PistonSleeve": {
+   "faces": 110,
+   "triangles_total": 236,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "PistonRod": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "PistonBlock": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "PistonBlock.001": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SidePlate.001": {
+   "faces": 286,
+   "triangles_total": 672,
+   "quads": 243,
+   "tris": 36,
+   "ngons": 7,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "PlateBolts.001": {
+   "faces": 76,
+   "triangles_total": 136,
+   "quads": 48,
+   "tris": 24,
+   "ngons": 4,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "PistonSleeve.001": {
+   "faces": 110,
+   "triangles_total": 236,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "PistonRod.001": {
+   "faces": 14,
+   "triangles_total": 44,
+   "quads": 12,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "PistonBlock.002": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "PistonBlock.003": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Armor": {
+   "faces": 200,
+   "triangles_total": 436,
+   "quads": 198,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "ArmorBolts": {
+   "faces": 98,
+   "triangles_total": 220,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "ArmorBolts.001": {
+   "faces": 98,
+   "triangles_total": 220,
+   "quads": 96,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "Badge": {
+   "faces": 246,
+   "triangles_total": 572,
+   "quads": 240,
+   "tris": 0,
+   "ngons": 6,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "BadgeText": {
+   "faces": 130,
+   "triangles_total": 176,
+   "quads": 46,
+   "tris": 84,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 0.043
+  },
+  "CanGlass": {
+   "faces": 22,
+   "triangles_total": 76,
+   "quads": 20,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CanCore": {
+   "faces": 18,
+   "triangles_total": 60,
+   "quads": 16,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CanCap": {
+   "faces": 182,
+   "triangles_total": 396,
+   "quads": 180,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CanCap.001": {
+   "faces": 182,
+   "triangles_total": 396,
+   "quads": 180,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CanClamp": {
+   "faces": 240,
+   "triangles_total": 480,
+   "quads": 240,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "ClampFoot": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CanClamp.001": {
+   "faces": 240,
+   "triangles_total": 480,
+   "quads": 240,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "ClampFoot.001": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Shroud": {
+   "faces": 218,
+   "triangles_total": 476,
+   "quads": 216,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Fin": {
+   "faces": 254,
+   "triangles_total": 556,
+   "quads": 252,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Fin.001": {
+   "faces": 254,
+   "triangles_total": 556,
+   "quads": 252,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Fin.002": {
+   "faces": 254,
+   "triangles_total": 556,
+   "quads": 252,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Muzzle": {
+   "faces": 480,
+   "triangles_total": 960,
+   "quads": 480,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "MuzzleGlow": {
+   "faces": 240,
+   "triangles_total": 480,
+   "quads": 240,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "MuzzleCore": {
+   "faces": 18,
+   "triangles_total": 60,
+   "quads": 16,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SightFrame": {
+   "faces": 436,
+   "triangles_total": 960,
+   "quads": 432,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Reticle": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "SightBase": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Grip": {
+   "faces": 343,
+   "triangles_total": 952,
+   "quads": 325,
+   "tris": 0,
+   "ngons": 18,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "GripCap": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Guard": {
+   "faces": 122,
+   "triangles_total": 260,
+   "quads": 120,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "Trigger": {
+   "faces": 232,
+   "triangles_total": 476,
+   "quads": 230,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  },
+  "Hose": {
+   "faces": 386,
+   "triangles_total": 788,
+   "quads": 384,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.003
+  },
+  "HoseClips": {
+   "faces": 192,
+   "triangles_total": 384,
+   "quads": 192,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.0
+  }
+ },
+ "size_m": [
+  0.456,
+  0.081,
+  0.262
+ ],
+ "blender": "5.2.3"
+}

@@ -1,0 +1,89 @@
+{
+ "name": "tree_stylized",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 6424,
+ "budget": 7000,
+ "build_seconds": 0.5,
+ "objects": {
+  "Trunk": {
+   "faces": 177,
+   "triangles_total": 350,
+   "quads": 160,
+   "tris": 16,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Roots": {
+   "faces": 90,
+   "triangles_total": 300,
+   "quads": 80,
+   "tris": 0,
+   "ngons": 10,
+   "shells": 5,
+   "symmetry": 0.0
+  },
+  "KnotRim": {
+   "faces": 72,
+   "triangles_total": 144,
+   "quads": 72,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "KnotHole": {
+   "faces": 49,
+   "triangles_total": 110,
+   "quads": 48,
+   "tris": 0,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Branches": {
+   "faces": 54,
+   "triangles_total": 180,
+   "quads": 48,
+   "tris": 0,
+   "ngons": 6,
+   "shells": 3,
+   "symmetry": 0.01
+  },
+  "Foliage": {
+   "faces": 750,
+   "triangles_total": 1500,
+   "quads": 750,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 5,
+   "symmetry": 0.025
+  },
+  "FoliageLight": {
+   "faces": 960,
+   "triangles_total": 1920,
+   "quads": 960,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 10,
+   "symmetry": 0.044
+  },
+  "FoliageDark": {
+   "faces": 960,
+   "triangles_total": 1920,
+   "quads": 960,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 10,
+   "symmetry": 0.037
+  }
+ },
+ "size_m": [
+  2.553,
+  2.196,
+  3.132
+ ],
+ "blender": "5.2.3"
+}

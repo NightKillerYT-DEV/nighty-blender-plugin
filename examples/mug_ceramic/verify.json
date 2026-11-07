@@ -1,0 +1,53 @@
+{
+ "name": "mug_ceramic",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 4648,
+ "budget": 5000,
+ "build_seconds": 0.3,
+ "objects": {
+  "Saucer": {
+   "faces": 1056,
+   "triangles_total": 2016,
+   "quads": 960,
+   "tris": 96,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Mug": {
+   "faces": 912,
+   "triangles_total": 1728,
+   "quads": 816,
+   "tris": 96,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Coffee": {
+   "faces": 50,
+   "triangles_total": 188,
+   "quads": 48,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Handle": {
+   "faces": 342,
+   "triangles_total": 716,
+   "quads": 340,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 0.0
+  }
+ },
+ "size_m": [
+  0.152,
+  0.15,
+  0.103
+ ],
+ "blender": "5.2.3"
+}

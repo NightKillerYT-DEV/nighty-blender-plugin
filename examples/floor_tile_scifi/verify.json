@@ -1,0 +1,98 @@
+{
+ "name": "floor_tile_scifi",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 4736,
+ "budget": 5200,
+ "build_seconds": 1.3,
+ "objects": {
+  "Slab": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Underglow": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Grate": {
+   "faces": 208,
+   "triangles_total": 720,
+   "quads": 204,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GrateFrame": {
+   "faces": 228,
+   "triangles_total": 512,
+   "quads": 224,
+   "tris": 0,
+   "ngons": 4,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BorderPlates": {
+   "faces": 560,
+   "triangles_total": 1720,
+   "quads": 528,
+   "tris": 0,
+   "ngons": 32,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "GlowStrips": {
+   "faces": 24,
+   "triangles_total": 48,
+   "quads": 24,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "CornerPlates": {
+   "faces": 216,
+   "triangles_total": 432,
+   "quads": 216,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "HazardStripes": {
+   "faces": 312,
+   "triangles_total": 528,
+   "quads": 216,
+   "tris": 96,
+   "ngons": 0,
+   "shells": 12,
+   "symmetry": 1.0
+  },
+  "Bolts": {
+   "faces": 320,
+   "triangles_total": 656,
+   "quads": 312,
+   "tris": 0,
+   "ngons": 8,
+   "shells": 4,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  2.0,
+  2.0,
+  0.127
+ ],
+ "blender": "5.2.3"
+}

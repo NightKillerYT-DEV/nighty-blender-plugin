@@ -1,0 +1,170 @@
+{
+ "name": "gem_crystal",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 1624,
+ "budget": 1800,
+ "build_seconds": 0.3,
+ "objects": {
+  "Rock": {
+   "faces": 168,
+   "triangles_total": 322,
+   "quads": 154,
+   "tris": 14,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.325
+  },
+  "Rock.001": {
+   "faces": 168,
+   "triangles_total": 322,
+   "quads": 154,
+   "tris": 14,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.049
+  },
+  "Pebble": {
+   "faces": 168,
+   "triangles_total": 322,
+   "quads": 154,
+   "tris": 14,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.215
+  },
+  "Pebble.001": {
+   "faces": 168,
+   "triangles_total": 322,
+   "quads": 154,
+   "tris": 14,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.423
+  },
+  "Crystal": {
+   "faces": 24,
+   "triangles_total": 36,
+   "quads": 12,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CrystalTip": {
+   "faces": 12,
+   "triangles_total": 12,
+   "quads": 0,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Crystal.001": {
+   "faces": 24,
+   "triangles_total": 36,
+   "quads": 12,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CrystalTip.001": {
+   "faces": 12,
+   "triangles_total": 12,
+   "quads": 0,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Crystal.002": {
+   "faces": 24,
+   "triangles_total": 36,
+   "quads": 12,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CrystalTip.002": {
+   "faces": 12,
+   "triangles_total": 12,
+   "quads": 0,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Crystal.003": {
+   "faces": 24,
+   "triangles_total": 36,
+   "quads": 12,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CrystalTip.003": {
+   "faces": 12,
+   "triangles_total": 12,
+   "quads": 0,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Crystal.004": {
+   "faces": 24,
+   "triangles_total": 36,
+   "quads": 12,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CrystalTip.004": {
+   "faces": 12,
+   "triangles_total": 12,
+   "quads": 0,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Crystal.005": {
+   "faces": 24,
+   "triangles_total": 36,
+   "quads": 12,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CrystalTip.005": {
+   "faces": 12,
+   "triangles_total": 12,
+   "quads": 0,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "CutGem": {
+   "faces": 32,
+   "triangles_total": 48,
+   "quads": 16,
+   "tris": 16,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.363,
+  0.275,
+  0.314
+ ],
+ "blender": "5.2.3"
+}

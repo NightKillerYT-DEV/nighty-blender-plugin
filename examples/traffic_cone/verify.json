@@ -1,0 +1,44 @@
+{
+ "name": "traffic_cone",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 2426,
+ "budget": 2700,
+ "build_seconds": 0.3,
+ "objects": {
+  "Base": {
+   "faces": 226,
+   "triangles_total": 508,
+   "quads": 224,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Cone": {
+   "faces": 705,
+   "triangles_total": 1406,
+   "quads": 672,
+   "tris": 32,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Bands": {
+   "faces": 256,
+   "triangles_total": 512,
+   "quads": 256,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.38,
+  0.38,
+  0.7
+ ],
+ "blender": "5.2.3"
+}

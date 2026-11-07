@@ -1,0 +1,55 @@
+{
+ "name": "rock_lowpoly",
+ "pass": true,
+ "errors": [],
+ "warnings": [
+  "Pebbles: 3 faces with 5+ sides that are not flat (shading errors)"
+ ],
+ "triangles": 1002,
+ "budget": 1100,
+ "build_seconds": 0.2,
+ "objects": {
+  "RockBig": {
+   "faces": 93,
+   "triangles_total": 174,
+   "quads": 81,
+   "tris": 12,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.079
+  },
+  "RockMid": {
+   "faces": 86,
+   "triangles_total": 162,
+   "quads": 76,
+   "tris": 10,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.072
+  },
+  "RockSmall": {
+   "faces": 92,
+   "triangles_total": 170,
+   "quads": 78,
+   "tris": 14,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.034
+  },
+  "Pebbles": {
+   "faces": 267,
+   "triangles_total": 496,
+   "quads": 223,
+   "tris": 41,
+   "ngons": 3,
+   "shells": 3,
+   "symmetry": 0.154
+  }
+ },
+ "size_m": [
+  1.287,
+  0.948,
+  0.491
+ ],
+ "blender": "5.2.3"
+}

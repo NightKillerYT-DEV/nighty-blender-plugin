@@ -1,0 +1,44 @@
+{
+ "name": "axe",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 2166,
+ "budget": 2500,
+ "build_seconds": 1.0,
+ "objects": {
+  "AxeHead": {
+   "faces": 195,
+   "triangles_total": 510,
+   "quads": 160,
+   "tris": 1,
+   "ngons": 34,
+   "shells": 1,
+   "symmetry": 0.047
+  },
+  "Haft": {
+   "faces": 452,
+   "triangles_total": 896,
+   "quads": 402,
+   "tris": 40,
+   "ngons": 10,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GripWrap": {
+   "faces": 400,
+   "triangles_total": 760,
+   "quads": 360,
+   "tris": 40,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.175,
+  0.039,
+  0.621
+ ],
+ "blender": "5.2.3"
+}

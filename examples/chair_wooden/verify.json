@@ -1,0 +1,80 @@
+{
+ "name": "chair_wooden",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 2488,
+ "budget": 2800,
+ "build_seconds": 0.5,
+ "objects": {
+  "Legs": {
+   "faces": 334,
+   "triangles_total": 712,
+   "quads": 326,
+   "tris": 4,
+   "ngons": 4,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "Seat": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Pad": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Rails": {
+   "faces": 324,
+   "triangles_total": 648,
+   "quads": 324,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 6,
+   "symmetry": 1.0
+  },
+  "CrossStretcher": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BackRails": {
+   "faces": 218,
+   "triangles_total": 480,
+   "quads": 216,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "BackSlats": {
+   "faces": 162,
+   "triangles_total": 324,
+   "quads": 162,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 3,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.48,
+  0.518,
+  0.95
+ ],
+ "blender": "5.2.3"
+}

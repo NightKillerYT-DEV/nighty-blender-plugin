@@ -1,0 +1,1294 @@
+[
+  {
+    "name": "check",
+    "description": "Checks, by what: mesh (counts, open / non-manifold edges, floating parts, flipped normals, UV overlap and stretch; pass, errors, warnings), textures (the baked maps: blur, metallic 0/1, baked-in light, unbaked pixels), source (the model against its locked _SOURCE copy: size, triangles, surface drift), roundtrip (export, read back, compare: what the engine gets), roblox (the Roblox gate: 20,000 triangles per part, UVs, 1024 px maps, scale, an export), final (marks the asset finished; refuses unless the last mesh check passed and nothing changed since, or a stated reason).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "what": {
+          "type": "string",
+          "enum": [
+            "mesh",
+            "textures",
+            "source",
+            "roundtrip",
+            "roblox",
+            "final"
+          ],
+          "description": "What to check."
+        },
+        "names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "(mesh, source, roundtrip, roblox, final) Required for final. Object names (default: the selected objects, else every visible mesh). / The asset's objects."
+        },
+        "allow_open": {
+          "type": "boolean",
+          "description": "(mesh) Open surfaces are fine (planes, leaves, cards)."
+        },
+        "allow_floating": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "(mesh) Objects that may float on purpose (a hanging lamp, a hover part)."
+        },
+        "budget": {
+          "type": "integer",
+          "description": "(mesh) Most triangles allowed over all objects."
+        },
+        "symmetry": {
+          "type": "string",
+          "enum": [
+            "X",
+            "Y",
+            "Z",
+            "none"
+          ],
+          "description": "(mesh) Mirror axis to score (X)."
+        },
+        "full": {
+          "type": "boolean",
+          "description": "(mesh) Every number per object (default: the ones that matter)."
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "(textures)"
+        },
+        "renders": {
+          "type": "boolean",
+          "description": "(textures) default true"
+        },
+        "tolerance_pct": {
+          "type": "number",
+          "description": "(source) Most drift allowed (95% of points), in % of the size (default 1)."
+        },
+        "file": {
+          "type": "string",
+          "description": "(roundtrip) An exported file to read back (default: a temporary GLB)."
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "glb",
+            "fbx"
+          ],
+          "description": "(roundtrip)"
+        },
+        "reason": {
+          "type": "string",
+          "description": "(final) Why finishing without a passing check is right."
+        },
+        "notes": {
+          "type": "string",
+          "description": "(final) What it is, for the record (one line)."
+        }
+      },
+      "required": [
+        "what"
+      ]
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "export",
+    "description": "Exports for an engine with the right scale, axes, normal-map format and channel packing: roblox (SurfaceAppearance maps, studs), unity (URP / HDRP maps), unreal (ORM, DirectX normal, cm), godot / gltf (.glb), blender (.blend). Bakes first when needed. Slow: a job.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "made_for": {
+          "type": "string",
+          "enum": [
+            "roblox",
+            "unity",
+            "unreal",
+            "godot",
+            "gltf",
+            "blender"
+          ]
+        },
+        "path": {
+          "type": "string",
+          "description": "output folder (default next to the .blend)"
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "name": {
+          "type": "string"
+        },
+        "size": {
+          "type": "string",
+          "enum": [
+            "1K",
+            "2K",
+            "4K"
+          ]
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "fbx",
+            "obj",
+            "glb"
+          ],
+          "description": "override (Roblox: fbx / obj)"
+        },
+        "join": {
+          "type": "boolean",
+          "description": "one mesh (default: yes for Roblox)"
+        }
+      }
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "guide",
+    "description": "Know-how. No arguments: the guide topics. topic: one guide (start with workflow: import first). examples: words to find verified example scripts (only when the person asked for a model built in code). api: this Blender's own API for a type, property or operator (bpy.types.Object, Mesh.vertices, bpy.ops.mesh.primitive_cube_add): look names up instead of guessing.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "topic": {
+          "type": "string",
+          "description": "A guide topic (workflow, blender-api, topology, texturing, ...)."
+        },
+        "examples": {
+          "type": "string",
+          "description": "Words for the example search, e.g. 'wooden crate'."
+        },
+        "style": {
+          "type": "string",
+          "enum": [
+            "realistic",
+            "stylized"
+          ],
+          "description": "examples: only this style."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "examples: 1-5 (default 2)."
+        },
+        "image": {
+          "type": "boolean",
+          "description": "examples: add the best match's render."
+        },
+        "api": {
+          "type": "string",
+          "description": "A bpy type, property or operator."
+        }
+      },
+      "additionalProperties": false
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "import",
+    "description": "Brings the person's model file in (GLB, glTF, FBX or OBJ, full path) as one object through a background Blender, keeps a locked <name>_SOURCE copy (never changed; check { what: source } compares against it) and writes a triage report (triangles, open edges, loose parts, UVs, textures, scale, rigs: what it needs). Optional fixes: level, facing, metal. A job: job { action: wait }.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "file": {
+          "type": "string",
+          "description": "Full path of the model file."
+        },
+        "name": {
+          "type": "string",
+          "description": "Object name (default: the file name)."
+        },
+        "size": {
+          "type": "number",
+          "description": "Longest side in meters (default: as stored in the file)."
+        },
+        "fixes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "level",
+              "facing",
+              "metal"
+            ]
+          },
+          "description": "Optional: level (stand it upright), facing (long side along X, front +X), metal (make a guessed metal map exactly 0/1)."
+        },
+        "location": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      },
+      "required": [
+        "file"
+      ]
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "job",
+    "description": "Slow work (imports, bakes, renders, exports, make_game_ready) runs as a job: the call answers with { job: id } at once. action wait: wait up to 45 s for it, then its result (or its progress: wait again); cancel: stop it; get: its state now; list: every job.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "wait",
+            "cancel",
+            "get",
+            "list"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "description": "The job id (wait, cancel, get)."
+        },
+        "seconds": {
+          "type": "number",
+          "description": "wait: how long, up to 45 (default 45)."
+        }
+      },
+      "required": [
+        "action"
+      ],
+      "additionalProperties": false
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "look",
+    "description": "Pictures of the model from fixed views (default front, right, top and a 3/4 view) in one image, plus each camera's pose. mode: solid (material colors), matcap (form and shading errors), material (studio render: real materials, soft lights, ground shadow, rendered by a background Blender), silhouette. View \"hero\" picks the best 3/4 angle. wireframe: true draws the edges on top. Off-screen: the view and settings stay as they are, and Blender keeps running while it renders. A render that takes longer than 40 s answers with a job id: then job { action: wait }. Use it after every change.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Object names (default: the selected objects, else every visible mesh)."
+        },
+        "views": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "back",
+              "bottom",
+              "front",
+              "hero",
+              "left",
+              "right",
+              "three_quarter",
+              "three_quarter_back",
+              "three_quarter_left",
+              "three_quarter_low",
+              "top"
+            ]
+          },
+          "description": "Default [front, right, top, three_quarter]. Front looks from -Y."
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "solid",
+            "matcap",
+            "material",
+            "silhouette"
+          ],
+          "description": "Default solid."
+        },
+        "wireframe": {
+          "type": "boolean",
+          "description": "Edges on top (topology check)."
+        },
+        "size": {
+          "type": "integer",
+          "description": "Pixels per view, 64-1024 (default 320)."
+        },
+        "perspective": {
+          "type": "boolean",
+          "description": "Front / side / top in perspective (default ortho)."
+        },
+        "separate": {
+          "type": "boolean",
+          "description": "One picture per view instead of a grid."
+        },
+        "references": {
+          "type": "boolean",
+          "description": "Draw loaded reference pictures behind (ortho views)."
+        }
+      }
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "make_game_ready",
+    "description": "The full pipeline as one job on the person's model: a file (imported first, with a locked _SOURCE copy and a triage report) or a mesh in the scene. Cleanup, clean colors, the exact triangle count, parts, UVs, textures (its own re-baked, or library materials per part), texture check, export for the engine, mesh check, finish. Ask first: without confirmed: true and the picks it starts nothing and answers with the ONE question to send the person (ask: true gives it at once); on their OK call again with their picks in options and confirmed: true. A job (job { action: wait }, minutes). Fixes after: mesh / texture.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "file": {
+          "type": "string",
+          "description": "A model file on this PC to start from (GLB, glTF, FBX or OBJ; full path). It is imported first, with a locked _SOURCE copy."
+        },
+        "object": {
+          "type": "string",
+          "description": "Or a mesh already in the scene (imported before, or built in code when the person asked for that)."
+        },
+        "name": {
+          "type": "string"
+        },
+        "size": {
+          "type": "number",
+          "description": "With file: longest side in meters (default: the file's own size)."
+        },
+        "preset": {
+          "type": "string",
+          "description": "e.g. 'Roblox prop', 'Realistic weapon' (asset_options lists them)"
+        },
+        "confirmed": {
+          "type": "boolean",
+          "description": "true only after the person answered the options question (OK or their changes). Without it nothing starts: the answer is the question to ask."
+        },
+        "options": {
+          "type": "object",
+          "description": "The picks the person confirmed (override the preset): mesh auto / triangles / quads, faces (the exact triangle count), detail low / medium / high, textures none / color / pbr / stylized, texture_type baked / blender, size 1K / 2K / 4K, made_for roblox / unity / unreal / godot / gltf / blender, colors auto / clean / keep",
+          "properties": {
+            "mesh": {
+              "type": "string",
+              "enum": [
+                "auto",
+                "triangles",
+                "quads"
+              ]
+            },
+            "detail": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ]
+            },
+            "faces": {
+              "type": "integer",
+              "description": "The exact triangle count (used as given)."
+            },
+            "textures": {
+              "type": "string",
+              "enum": [
+                "none",
+                "color",
+                "pbr",
+                "stylized"
+              ]
+            },
+            "texture_type": {
+              "type": "string",
+              "enum": [
+                "baked",
+                "blender"
+              ]
+            },
+            "size": {
+              "type": "string",
+              "enum": [
+                "1K",
+                "2K",
+                "4K"
+              ]
+            },
+            "made_for": {
+              "type": "string",
+              "enum": [
+                "roblox",
+                "unity",
+                "unreal",
+                "godot",
+                "gltf",
+                "blender"
+              ]
+            },
+            "colors": {
+              "type": "string",
+              "enum": [
+                "auto",
+                "clean",
+                "keep"
+              ],
+              "description": "the model's colors: auto (clean flat colors with crisp borders when the texture is mostly flat colors, else only metal / roughness per region), clean, keep"
+            }
+          }
+        },
+        "texture_source": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "own",
+            "materials"
+          ],
+          "description": "own: the model's own textures re-baked onto the low poly; materials: real library materials per part, picked from each part's own colors; auto (default): materials when materials are given, else own."
+        },
+        "materials": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Library materials to choose from, e.g. ['wood', 'brass'] (biggest part first)."
+        },
+        "split": {
+          "type": "boolean",
+          "description": "Split into parts (default: only for materials per part)."
+        },
+        "cleanup": {
+          "type": "boolean",
+          "description": "Clean the mesh first (weld, floaters, holes; default: yes for a file, no for a scene mesh)."
+        },
+        "path": {
+          "type": "string",
+          "description": "Export folder (default next to the .blend / Blender's folder)."
+        },
+        "ask": {
+          "type": "boolean",
+          "description": "Only the options question for these picks (with options / preset; starts nothing)."
+        },
+        "menu": {
+          "type": "boolean",
+          "description": "The options menu and presets."
+        }
+      }
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true
+    }
+  },
+  {
+    "name": "measure",
+    "description": "Sizes in meters: each object's bounds (size, min, max, center), the group's, optional distances between pairs (surface gap, touching) and a comparison with a reference or ghost object (size ratio, overlap, average surface distance).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Object names (default: the selected objects, else every visible mesh)."
+        },
+        "pairs": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": "[[a, b], ...] object pairs to measure the distance between."
+        },
+        "reference": {
+          "type": "string",
+          "description": "A reference / ghost object to compare the objects with."
+        }
+      }
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "mesh",
+    "description": "Mesh steps on the working model (never on a _SOURCE copy), by op: cleanup (weld, floaters, holes, manifold, normals, size, on the ground), decimate (an exact triangle count, keeps sharp edges, seams, symmetry), retopo (quads, triangles or auto; exact counts), uv_unwrap (one shared atlas, seams from sharp edges), lods (_LOD1.. copies), split_parts (by loose pieces, creases, planes or color regions), fix_shading (normals out, smooth with sharp edges by angle). Each is one undo step; the slow ones answer with a job id (job { action: wait }).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "op": {
+          "type": "string",
+          "enum": [
+            "cleanup",
+            "decimate",
+            "retopo",
+            "uv_unwrap",
+            "lods",
+            "split_parts",
+            "fix_shading"
+          ],
+          "description": "The mesh step."
+        },
+        "objects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Mesh object names. Default: the selected meshes, else the active object. / Object names (default: the selected objects, else every visible mesh)."
+        },
+        "size": {
+          "type": "number",
+          "description": "(cleanup) Real size in meters along size_axis (e.g. 0.9 for a rifle)."
+        },
+        "size_axis": {
+          "type": "string",
+          "enum": [
+            "longest",
+            "height",
+            "x",
+            "y",
+            "z"
+          ],
+          "default": "longest",
+          "description": "(cleanup)"
+        },
+        "floaters": {
+          "type": "number",
+          "default": 0.03,
+          "description": "(cleanup) Remove loose pieces smaller than this share of the whole size (0 = keep)."
+        },
+        "keep_largest": {
+          "type": "boolean",
+          "default": false,
+          "description": "(cleanup) Keep only the biggest piece."
+        },
+        "holes": {
+          "type": "boolean",
+          "default": true,
+          "description": "(cleanup)"
+        },
+        "manifold": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "voxel",
+            "fix",
+            "off"
+          ],
+          "default": "auto",
+          "description": "(cleanup) auto: targeted fixes, voxel rebuild only if still broken."
+        },
+        "voxel_size": {
+          "type": "number",
+          "description": "(cleanup) Meters (default: picked from the size and detail)."
+        },
+        "join": {
+          "type": "boolean",
+          "default": true,
+          "description": "(cleanup) Join parts left floating a few mm apart (common in generated models) into one solid."
+        },
+        "flatten": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "on",
+            "off"
+          ],
+          "default": "auto",
+          "description": "(cleanup) Make flat sides truly flat with crisp edges (auto: hard-surface shapes only)."
+        },
+        "ground": {
+          "type": "boolean",
+          "default": true,
+          "description": "(cleanup)"
+        },
+        "origin": {
+          "type": "string",
+          "enum": [
+            "bottom",
+            "center",
+            "keep"
+          ],
+          "default": "bottom",
+          "description": "(cleanup)"
+        },
+        "faces": {
+          "type": [
+            "array",
+            "integer"
+          ],
+          "description": "(decimate, retopo, lods) Target triangles. / Exact face count (overrides detail)."
+        },
+        "ratio": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "description": "(decimate)"
+        },
+        "symmetry": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "x",
+            "y",
+            "z",
+            "off"
+          ],
+          "default": "auto",
+          "description": "(decimate, retopo)"
+        },
+        "planar": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "on",
+            "off"
+          ],
+          "default": "auto",
+          "description": "(decimate)"
+        },
+        "keep_sharp": {
+          "type": "boolean",
+          "default": true,
+          "description": "(decimate, retopo)"
+        },
+        "sharp_angle": {
+          "type": "number",
+          "default": 35,
+          "description": "(decimate, retopo) Degrees; sharper edges stay crisp."
+        },
+        "keep_source": {
+          "type": "boolean",
+          "default": true,
+          "description": "(decimate, retopo) Keep the dense original hidden for baking."
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "quads",
+            "triangles"
+          ],
+          "default": "auto",
+          "description": "(retopo)"
+        },
+        "detail": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "default": "medium",
+          "description": "(retopo) low ~3k, medium ~12k, high ~40k triangles (quads: half as many faces)."
+        },
+        "engine": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "quadriflow",
+            "instant_meshes",
+            "quadwild",
+            "qremeshify"
+          ],
+          "default": "auto",
+          "description": "(retopo) Quad remesher (auto: the best one installed)."
+        },
+        "triangulate": {
+          "type": "string",
+          "enum": [
+            "keep",
+            "now",
+            "on_export"
+          ],
+          "default": "keep",
+          "description": "(retopo)"
+        },
+        "texture_size": {
+          "type": "string",
+          "enum": [
+            "512",
+            "1K",
+            "2K",
+            "4K",
+            "8K"
+          ],
+          "default": "2K",
+          "description": "(uv_unwrap)"
+        },
+        "method": {
+          "type": "string",
+          "description": "(uv_unwrap, split_parts)"
+        },
+        "seam_angle": {
+          "type": "number",
+          "default": 60,
+          "description": "(uv_unwrap) Degrees; sharper crease lines become seams."
+        },
+        "margin_px": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "(uv_unwrap) Space between islands in pixels."
+        },
+        "shared": {
+          "type": "boolean",
+          "default": true,
+          "description": "(uv_unwrap) One atlas for all objects (one texture set)."
+        },
+        "ratios": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "description": "(lods)"
+        },
+        "angle": {
+          "type": "number",
+          "description": "(split_parts, fix_shading) Degrees for concave / sharp. / Edges sharper than this stay sharp (degrees, default 30)."
+        },
+        "planes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "point": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "normal": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              }
+            }
+          },
+          "description": "(split_parts) For method plane: cut planes in object space."
+        },
+        "min_size": {
+          "type": "number",
+          "default": 0.01,
+          "description": "(split_parts) Regions under this share of the surface join a neighbour."
+        },
+        "names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "(split_parts) Part names, biggest part first (e.g. [\"receiver\", \"barrel\"])."
+        },
+        "cap": {
+          "type": "boolean",
+          "description": "(split_parts) Close the cut openings (default: only for plane)."
+        },
+        "keep_original": {
+          "type": "boolean",
+          "default": false,
+          "description": "(split_parts) Hide the original, don't delete."
+        },
+        "clear": {
+          "type": "boolean",
+          "description": "(fix_shading) Remove custom split normals first (default true)."
+        },
+        "flat": {
+          "type": "boolean",
+          "description": "(fix_shading) Flat shading instead (low poly look)."
+        }
+      },
+      "required": [
+        "op"
+      ]
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true
+    }
+  },
+  {
+    "name": "reference",
+    "description": "Reference pictures for modeling: load puts pictures as scaled image planes aligned to a view (shown in ortho views, never rendered; the subject's size in meters from width or height); score renders the model's silhouette in that view and compares (overlap IoU, sizes, a picture: red = model only, blue = reference only); list; clear.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "load",
+            "score",
+            "list",
+            "clear"
+          ]
+        },
+        "images": {
+          "type": "array",
+          "description": "For load.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "description": "A picture file on this computer (PNG / JPG)."
+              },
+              "view": {
+                "type": "string",
+                "enum": [
+                  "front",
+                  "back",
+                  "left",
+                  "right",
+                  "top",
+                  "bottom"
+                ],
+                "description": "The view it shows (front looks from -Y: a gun along X shows its side)."
+              },
+              "width": {
+                "type": "number",
+                "description": "The subject's width in meters."
+              },
+              "height": {
+                "type": "number",
+                "description": "The subject's height in meters."
+              },
+              "center": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "description": "Subject center on the view plane (u, v) in meters."
+              },
+              "opacity": {
+                "type": "number",
+                "description": "0-1 (default 0.5)."
+              }
+            },
+            "required": [
+              "path"
+            ]
+          }
+        },
+        "view": {
+          "type": "string",
+          "enum": [
+            "front",
+            "back",
+            "left",
+            "right",
+            "top",
+            "bottom"
+          ],
+          "description": "For score."
+        },
+        "names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Object names (default: the selected objects, else every visible mesh)."
+        }
+      },
+      "required": [
+        "action"
+      ]
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "run_python",
+    "description": "Run a short Python script in Blender (bpy, bmesh, mathutils, math, random, nighty ready). For small fixes the person asked for; models come from the person's file (build one in code only when the person asks for that). `result` is returned; print() is captured. 'safe' level: no imports or risky calls; 'full': any.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "The Python to run."
+        }
+      },
+      "required": [
+        "code"
+      ]
+    },
+    "slow": false,
+    "level": "safe",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true
+    }
+  },
+  {
+    "name": "scene",
+    "description": "The scene as a compact tree: collections, objects (type, location, size, faces, modifiers, materials, children), selection, units and Blender version. Call it first.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "collection": {
+          "type": "string",
+          "description": "Only this collection."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Most objects to list (default 150)."
+        }
+      }
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "status",
+    "description": "Nighty Blender in the person's Blender: pairing state, Blender and addon versions, the safety level the person set (tools / safe Python / full Python; only they can change it, in Blender's N panel), the open .blend file and the jobs still running. A good first call.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "texture",
+    "description": "Texture steps, by op: bake (the parts' materials or the model's own textures into clean maps, one texture set; a job), clean_colors (an imported model's ragged texture colors made flat and crisp per region, or only metal / roughness fixed when it has real detail; a job), stylize (hand-painted look), decal (a sharp image or text projected on a part), assign_materials (real library materials per part: steel, wood, rubber...; CC0 texture downloads only after the person agrees), fix_seams (texture colors grown past UV edges: no lines along seams).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "op": {
+          "type": "string",
+          "enum": [
+            "bake",
+            "clean_colors",
+            "stylize",
+            "decal",
+            "assign_materials",
+            "fix_seams"
+          ],
+          "description": "The texture step."
+        },
+        "parts": {
+          "type": [
+            "array",
+            "object"
+          ],
+          "description": "(bake, stylize, assign_materials, fix_seams) Required for assign_materials. {part: 'gunmetal'} or {part: {material, color '#rrggbb', force_tint (tint wood / leather too), wear, dirt, roughness}} / Object names (default: the selected objects, else every visible mesh)."
+        },
+        "name": {
+          "type": "string",
+          "description": "(bake, decal)"
+        },
+        "size": {
+          "type": [
+            "number",
+            "string"
+          ],
+          "description": "(bake, clean_colors, decal) The final texture size (default from asset_options): details it can't show go. / width in meters"
+        },
+        "maps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "base_color",
+              "roughness",
+              "metallic",
+              "normal",
+              "ao",
+              "emission",
+              "opacity"
+            ]
+          },
+          "description": "(bake)"
+        },
+        "high": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "(bake) {low part: high poly} for normal / AO from a high poly"
+        },
+        "from_high": {
+          "type": "boolean",
+          "description": "(bake) Colors / roughness / metallic from the high poly's own textures (an imported model's) instead of the parts' materials"
+        },
+        "device": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "cpu",
+            "gpu"
+          ],
+          "description": "(bake)"
+        },
+        "objects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "(clean_colors) Models (default: selected, else every imported model)."
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "clean",
+            "gentle",
+            "keep",
+            "restore"
+          ],
+          "description": "(clean_colors)"
+        },
+        "picture": {
+          "type": "string",
+          "description": "(clean_colors) A picture of the object (full path, optional): fixes colors that drifted in the texture (white gone lavender)."
+        },
+        "gradient": {
+          "type": "number",
+          "description": "(stylize) 0..1 darker low, lighter high"
+        },
+        "light": {
+          "type": "number",
+          "description": "(stylize) 0..1 painted light strength"
+        },
+        "light_dir": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "(stylize) [x, y, z] toward the light"
+        },
+        "steps": {
+          "type": "integer",
+          "description": "(stylize) toon bands (0 = smooth)"
+        },
+        "edges": {
+          "type": "number",
+          "description": "(stylize) 0..1 edge highlights"
+        },
+        "ao": {
+          "type": "number",
+          "description": "(stylize) 0..1 AO painted in"
+        },
+        "cavity": {
+          "type": "number",
+          "description": "(stylize) 0..1 dark cavities"
+        },
+        "roughness": {
+          "type": "number",
+          "description": "(stylize, decal)"
+        },
+        "saturation": {
+          "type": "number",
+          "description": "(stylize) 1 = as is"
+        },
+        "part": {
+          "type": "string",
+          "description": "(decal)"
+        },
+        "image": {
+          "type": "string",
+          "description": "(decal) a PNG / JPG path (or give text)"
+        },
+        "text": {
+          "type": "string",
+          "description": "(decal)"
+        },
+        "side": {
+          "type": "string",
+          "enum": [
+            "front",
+            "back",
+            "left",
+            "right",
+            "top",
+            "bottom"
+          ],
+          "description": "(decal)"
+        },
+        "offset": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "(decal) [right, up] meters from center"
+        },
+        "at": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "(decal) a world point instead of side"
+        },
+        "rotation": {
+          "type": "number",
+          "description": "(decal) degrees"
+        },
+        "color": {
+          "type": "string",
+          "description": "(decal) text color '#rrggbb'"
+        },
+        "outline": {
+          "type": "number",
+          "description": "(decal) text outline, share of its height (0.06)"
+        },
+        "outline_color": {
+          "type": "string",
+          "description": "(decal)"
+        },
+        "font": {
+          "type": "string",
+          "description": "(decal) a .ttf / .otf path"
+        },
+        "metallic": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "description": "(decal)"
+        },
+        "remove": {
+          "type": "string",
+          "description": "(decal) name of a decal to remove"
+        },
+        "style": {
+          "type": "string",
+          "enum": [
+            "pbr",
+            "stylized"
+          ],
+          "description": "(assign_materials)"
+        },
+        "wear": {
+          "type": "number",
+          "description": "(assign_materials) 0 clean .. 1 battered (default from the options)"
+        },
+        "dirt": {
+          "type": "number",
+          "description": "(assign_materials) 0 .. 1 cavity dirt"
+        },
+        "cc0": {
+          "type": "boolean",
+          "description": "(assign_materials) use CC0 photo textures (Poly Haven) where the library has them"
+        },
+        "cc0_agree": {
+          "type": "boolean",
+          "description": "(assign_materials) the person said yes to CC0 downloads"
+        },
+        "cc0_folder": {
+          "type": "string",
+          "description": "(assign_materials) where the person wants them (optional)"
+        },
+        "margin_px": {
+          "type": "integer",
+          "description": "(fix_seams) How far to grow, in pixels (default 1/64 of the size)."
+        }
+      },
+      "required": [
+        "op"
+      ]
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true
+    }
+  },
+  {
+    "name": "undo",
+    "description": "Takes back the AI's own changes only (steps named 'AI: ...'); it stops at the person's own work and never undoes it. No arguments: the last AI step. steps: several. checkpoint: a named mark to come back to; to: back to that mark. list: the recent steps.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "steps": {
+          "type": "integer",
+          "description": "How many AI steps to take back (1-50, default 1)."
+        },
+        "checkpoint": {
+          "type": "string",
+          "description": "Set a named checkpoint now (nothing is undone)."
+        },
+        "to": {
+          "type": "string",
+          "description": "Undo the AI's steps back to this checkpoint."
+        },
+        "list": {
+          "type": "boolean",
+          "description": "List the recent undo steps."
+        }
+      },
+      "additionalProperties": false
+    },
+    "slow": false,
+    "level": "tools",
+    "changes": false,
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true
+    }
+  }
+]

@@ -1,0 +1,71 @@
+{
+ "name": "coin_gold",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 2400,
+ "budget": 2500,
+ "build_seconds": 0.3,
+ "objects": {
+  "StackCoin1": {
+   "faces": 74,
+   "triangles_total": 188,
+   "quads": 72,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "StackCoin2": {
+   "faces": 74,
+   "triangles_total": 188,
+   "quads": 72,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "StackCoin3": {
+   "faces": 74,
+   "triangles_total": 188,
+   "quads": 72,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "StackCoin4": {
+   "faces": 280,
+   "triangles_total": 612,
+   "quads": 266,
+   "tris": 10,
+   "ngons": 4,
+   "shells": 3,
+   "symmetry": 1.0
+  },
+  "FlatCoin": {
+   "faces": 280,
+   "triangles_total": 612,
+   "quads": 266,
+   "tris": 10,
+   "ngons": 4,
+   "shells": 3,
+   "symmetry": 1.0
+  },
+  "Coin": {
+   "faces": 280,
+   "triangles_total": 612,
+   "quads": 266,
+   "tris": 10,
+   "ngons": 4,
+   "shells": 3,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  0.286,
+  0.224,
+  0.12
+ ],
+ "blender": "5.2.3"
+}

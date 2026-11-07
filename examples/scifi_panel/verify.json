@@ -1,0 +1,134 @@
+{
+ "name": "scifi_panel",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 3150,
+ "budget": 3500,
+ "build_seconds": 0.6,
+ "objects": {
+  "Backing": {
+   "faces": 60,
+   "triangles_total": 124,
+   "quads": 59,
+   "tris": 0,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 0.875
+  },
+  "LightStrip": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HatchPlate": {
+   "faces": 274,
+   "triangles_total": 748,
+   "quads": 264,
+   "tris": 0,
+   "ngons": 10,
+   "shells": 1,
+   "symmetry": 0.343
+  },
+  "HatchGrip": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "HatchHinges": {
+   "faces": 108,
+   "triangles_total": 216,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  },
+  "Bolts": {
+   "faces": 320,
+   "triangles_total": 656,
+   "quads": 312,
+   "tris": 0,
+   "ngons": 8,
+   "shells": 4,
+   "symmetry": 1.0
+  },
+  "LightBezel": {
+   "faces": 80,
+   "triangles_total": 160,
+   "quads": 80,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "StatusLight": {
+   "faces": 49,
+   "triangles_total": 110,
+   "quads": 48,
+   "tris": 0,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GrillePlate": {
+   "faces": 76,
+   "triangles_total": 188,
+   "quads": 73,
+   "tris": 0,
+   "ngons": 3,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "GrilleBars": {
+   "faces": 270,
+   "triangles_total": 540,
+   "quads": 270,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 5,
+   "symmetry": 1.0
+  },
+  "GrilleLight": {
+   "faces": 6,
+   "triangles_total": 12,
+   "quads": 6,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Conduit": {
+   "faces": 18,
+   "triangles_total": 60,
+   "quads": 16,
+   "tris": 0,
+   "ngons": 2,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Clamps": {
+   "faces": 108,
+   "triangles_total": 216,
+   "quads": 108,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 2,
+   "symmetry": 1.0
+  }
+ },
+ "size_m": [
+  1.0,
+  0.106,
+  1.0
+ ],
+ "blender": "5.2.3"
+}

@@ -1,0 +1,80 @@
+{
+ "name": "oil_drum",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 5400,
+ "budget": 6000,
+ "build_seconds": 0.4,
+ "objects": {
+  "Body": {
+   "faces": 1044,
+   "triangles_total": 2016,
+   "quads": 972,
+   "tris": 72,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Band": {
+   "faces": 144,
+   "triangles_total": 288,
+   "quads": 144,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Stencil": {
+   "faces": 495,
+   "triangles_total": 672,
+   "quads": 177,
+   "tris": 318,
+   "ngons": 0,
+   "shells": 14,
+   "symmetry": 0.045
+  },
+  "Stencil.001": {
+   "faces": 467,
+   "triangles_total": 628,
+   "quads": 161,
+   "tris": 306,
+   "ngons": 0,
+   "shells": 9,
+   "symmetry": 0.031
+  },
+  "Seam": {
+   "faces": 54,
+   "triangles_total": 108,
+   "quads": 54,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "BungLarge": {
+   "faces": 398,
+   "triangles_total": 916,
+   "quads": 376,
+   "tris": 0,
+   "ngons": 22,
+   "shells": 2,
+   "symmetry": 0.987
+  },
+  "BungSmall": {
+   "faces": 338,
+   "triangles_total": 772,
+   "quads": 316,
+   "tris": 0,
+   "ngons": 22,
+   "shells": 2,
+   "symmetry": 0.985
+  }
+ },
+ "size_m": [
+  0.582,
+  0.582,
+  0.881
+ ],
+ "blender": "5.2.3"
+}

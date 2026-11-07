@@ -1,0 +1,152 @@
+{
+ "name": "mushroom_stylized",
+ "pass": true,
+ "errors": [],
+ "warnings": [],
+ "triangles": 4944,
+ "budget": 5500,
+ "build_seconds": 1.1,
+ "objects": {
+  "Mound": {
+   "faces": 224,
+   "triangles_total": 416,
+   "quads": 192,
+   "tris": 32,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 0.362
+  },
+  "ToadstoolStem": {
+   "faces": 145,
+   "triangles_total": 286,
+   "quads": 128,
+   "tris": 16,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "ToadstoolRing": {
+   "faces": 64,
+   "triangles_total": 128,
+   "quads": 64,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "ToadstoolCap": {
+   "faces": 448,
+   "triangles_total": 832,
+   "quads": 384,
+   "tris": 64,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "ToadstoolSpots": {
+   "faces": 225,
+   "triangles_total": 414,
+   "quads": 108,
+   "tris": 108,
+   "ngons": 9,
+   "shells": 9,
+   "symmetry": 0.111
+  },
+  "Toadstool6Stem": {
+   "faces": 145,
+   "triangles_total": 286,
+   "quads": 128,
+   "tris": 16,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Toadstool6Ring": {
+   "faces": 64,
+   "triangles_total": 128,
+   "quads": 64,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Toadstool6Cap": {
+   "faces": 280,
+   "triangles_total": 520,
+   "quads": 240,
+   "tris": 40,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Toadstool6Spots": {
+   "faces": 150,
+   "triangles_total": 276,
+   "quads": 72,
+   "tris": 72,
+   "ngons": 6,
+   "shells": 6,
+   "symmetry": 0.167
+  },
+  "Toadstool4Stem": {
+   "faces": 145,
+   "triangles_total": 286,
+   "quads": 128,
+   "tris": 16,
+   "ngons": 1,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Toadstool4Ring": {
+   "faces": 64,
+   "triangles_total": 128,
+   "quads": 64,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Toadstool4Cap": {
+   "faces": 280,
+   "triangles_total": 520,
+   "quads": 240,
+   "tris": 40,
+   "ngons": 0,
+   "shells": 1,
+   "symmetry": 1.0
+  },
+  "Toadstool4Spots": {
+   "faces": 100,
+   "triangles_total": 184,
+   "quads": 48,
+   "tris": 48,
+   "ngons": 4,
+   "shells": 4,
+   "symmetry": 0.25
+  },
+  "Pebbles": {
+   "faces": 72,
+   "triangles_total": 144,
+   "quads": 72,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 3,
+   "symmetry": 0.128
+  },
+  "Grass": {
+   "faces": 198,
+   "triangles_total": 396,
+   "quads": 198,
+   "tris": 0,
+   "ngons": 0,
+   "shells": 33,
+   "symmetry": 0.038
+  }
+ },
+ "size_m": [
+  0.75,
+  0.604,
+  0.398
+ ],
+ "blender": "5.2.3"
+}
