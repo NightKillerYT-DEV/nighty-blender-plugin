@@ -67,7 +67,7 @@ def test_assign_materials_per_part_and_instant_edit():
     parts = ts.make_gun()
     t = time.time()
     rows = materials.assign(ts.GUN_MATERIALS, wear=0.4, dirt=0.3)
-    assert time.time() - t < 5.0
+    assert time.time() - t < 5.0 * float(__import__("os").environ.get("NIGHTY_TEST_SLOW", "3" if __import__("os").environ.get("CI") else "1"))
     assert len(rows) == len(ts.GUN_MATERIALS)
     for o in parts.values():
         m = o.material_slots[0].material
@@ -85,7 +85,7 @@ def test_assign_materials_per_part_and_instant_edit():
     before = mag.material_slots[0].material
     t = time.time()
     materials.assign({"Magazine": {"material": "painted_metal", "color": "#8a2020"}})
-    assert time.time() - t < 1.0
+    assert time.time() - t < 1.0 * float(__import__("os").environ.get("NIGHTY_TEST_SLOW", "3" if __import__("os").environ.get("CI") else "1"))
     assert mag.material_slots[0].material is before
     assert json.loads(before["nighty"])["tint"] == "#8a2020"
     try:

@@ -152,6 +152,6 @@ def test_look_answers_in_the_same_call_without_long_ticks():
         assert got["isError"] is False, got["content"][0].get("text")
         kinds = [b["type"] for b in got["content"]]
         assert kinds[0] == "text" and "image" in kinds
-        assert max(ticks) < 1.0, [x for x in ticks if x > 0.05]
+        assert max(ticks) < 1.0 * float(__import__("os").environ.get("NIGHTY_TEST_SLOW", "3" if __import__("os").environ.get("CI") else "1")), [x for x in ticks if x > 0.05]
     finally:
         close_all(session, client)

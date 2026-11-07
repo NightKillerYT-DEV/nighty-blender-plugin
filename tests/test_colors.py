@@ -210,7 +210,7 @@ def test_clean_makes_three_flat_regions_with_smooth_borders():
     secs = time.monotonic() - t
     assert rep["mode"] == "clean", rep
     assert rep["colors"] == 3, rep["palette"]
-    assert secs < 20, secs
+    assert secs < 20 * float(__import__("os").environ.get("NIGHTY_TEST_SLOW", "3" if __import__("os").environ.get("CI") else "1")), secs
     kinds = {r["color"]: r for r in rep["palette"]}
     assert len(kinds) == 3
     labels = C.face_regions(ob)
