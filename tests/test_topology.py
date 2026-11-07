@@ -397,7 +397,8 @@ def test_instant_meshes_download_is_hash_checked():
     os.environ["NIGHTY_TOOLS_DIR"] = tmp
     os.environ.pop("NIGHTY_INSTANT_MESHES", None)
     try:
-        H.check(saved.get("sha256") and saved.get("exe_sha256"), "the real build is pinned")
+        if key == "win32":   # only the Windows build is pinned; macOS / Linux offer no download yet
+            H.check(saved.get("sha256") and saved.get("exe_sha256"), "the real build is pinned")
         X.INSTANT_MESHES_DOWNLOAD[key].update(
             url=url, size=len(blob), sha256=hashlib.sha256(blob).hexdigest(), exe="Instant Meshes.exe",
             exe_size=len(exe_bytes), exe_sha256=hashlib.sha256(exe_bytes).hexdigest())
